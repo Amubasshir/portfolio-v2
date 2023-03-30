@@ -10,7 +10,7 @@ const Navbar = () => {
         <Link href="/about">About</Link>
         <Link href="/contact">Contact</Link>
       </nav>
-      <Logo />
+
       <nav>
         <Link href="/" target="_blank">
           t
@@ -22,6 +22,9 @@ const Navbar = () => {
           g
         </Link>
       </nav>
+      <div className="absolute left-[50%] top-3 translate-x-[-50%]">
+        <Logo />
+      </div>
     </header>
   );
 };
