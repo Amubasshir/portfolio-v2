@@ -1,3 +1,4 @@
+import Footer from 'componemt/src/components/Footer';
 import Navbar from 'componemt/src/components/Navbar';
 import 'componemt/styles/globals.css';
 import { Montserrat } from 'next/font/google';
@@ -20,6 +21,7 @@ export default function App({ Component, pageProps }) {
       >
         <Navbar />
         <Component {...pageProps} />
+        <Footer />
       </main>
     </>
   );
