@@ -12,7 +12,7 @@ const Logo = () => {
       >
         <motion.h5
           whileHover={{
-            color: ['#FFFFFF', '#FFFF00', '#000000'],
+            color: ['#FFFFFF', '#F59748', '#000000'],
           }}
           transition={{ duration: 1, repeat: 1 }}
         >

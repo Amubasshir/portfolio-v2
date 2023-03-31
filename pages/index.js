@@ -1,9 +1,9 @@
+import AnimatedImage from 'componemt/src/components/AnimatedImage';
+import AnimatedParagraph from 'componemt/src/components/AnimatedParagraph';
 import AnimatedText from 'componemt/src/components/AnimatedText';
-import { LinkArrow } from 'componemt/src/components/Icons';
+import HeroButtons from 'componemt/src/components/HeroButtons';
 import Layout from 'componemt/src/components/Layout';
 import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
 import profilePic from '../public/images/profile/p-m-h.png';
 
 export default function Home() {
@@ -16,41 +16,28 @@ export default function Home() {
       <main className="flex items-center text-black w-full min-h-screen">
         <Layout className="pt-0">
           <div className="hero-section flex items-center justify-between w-full">
-            <div className="hero-image w-1/2">
-              <Image
-                src={profilePic}
-                alt="React developer: Mubasshir Ahmed"
-                className="w-full h-auto"
-              />
-            </div>
             <div className="hero-text w-1/2 flex flex-col items-center self-center">
               <AnimatedText
                 text="Turning Vision Into Reality With The Magic Of React..."
                 className="!text-6xl !text-left !leading-[64px]"
               />
-              <p className="my-4 text-lg font-medium leading-7 tracking-wider">
-                As a react developer, my passion is to transform ideas into
+              <AnimatedParagraph
+                text="As a react developer, my passion is to transform ideas into
                 dynamic and efficient web applications. Explore my latest
-                projects, showcasing my expertise in web development.
-              </p>
+                projects, showcasing my expertise in web development."
+                className=""
+              />
               <div className="hero-buttons flex items-center mt-2  self-start">
-                <Link
-                  href="https://github.com/"
-                  target={'_blank'}
-                  className="flex items-center text-gray-50 px-6 py-2 bg-black rounded-lg text-lg font-serif tracking-wider hover:bg-light hover:text-dark border-solid border-transparent hover:border-dark border-2 duration-300 "
-                  download={true}
-                >
-                  Resume
-                  <LinkArrow className="w-6 ml-1" />
-                </Link>
-                <Link
-                  href="mailto:mubasshir1107@gmail.com"
-                  target={'_blank'}
-                  className="flex items-center  px-6 py-2 ml-3 rounded-lg text-lg font-serif tracking-wider hover:bg-black hover:text-white border-solid border-dark border-2 duration-300 "
-                >
-                  Contact
-                </Link>
+                <HeroButtons className="hero-buttons flex items-center mt-4 self-start" />
               </div>
+            </div>
+
+            <div className="hero-image w-1/2">
+              <AnimatedImage
+                src={profilePic}
+                alt="React developer: Mubasshir Ahmed"
+                className="w-full h-auto"
+              />
             </div>
           </div>
         </Layout>
