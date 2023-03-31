@@ -1,10 +1,11 @@
-import AnimatedImage from 'componemt/src/components/AnimatedImage';
-import AnimatedParagraph from 'componemt/src/components/AnimatedParagraph';
-import AnimatedText from 'componemt/src/components/AnimatedText';
-import HeroButtons from 'componemt/src/components/HeroButtons';
-import Layout from 'componemt/src/components/Layout';
+import AnimatedSubText from 'componemt/src/components/AnimatedSubText';
 import Head from 'next/head';
 import profilePic from '../public/images/profile/p-m-h.png';
+import AnimatedImage from '/src/components/AnimatedImage';
+import AnimatedParagraph from '/src/components/AnimatedParagraph';
+import AnimatedText from '/src/components/AnimatedText';
+import HeroButtons from '/src/components/HeroButtons';
+import Layout from '/src/components/Layout';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Layout className="pt-0">
           <div className="hero-section flex items-center justify-between w-full">
             <div className="hero-text w-1/2 flex flex-col items-center self-center">
+              <AnimatedSubText text="I'm Mubasshir," />
               <AnimatedText
                 text="Turning Vision Into Reality With The Magic Of React..."
                 className="!text-6xl !text-left !leading-[64px]"
