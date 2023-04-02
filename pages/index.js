@@ -20,7 +20,7 @@ export default function Home() {
             <div className="hero-text w-1/2 flex flex-col items-center self-center">
               <AnimatedSubText text="I'm Mubasshir," />
               <AnimatedText
-                text="Turning Vision Into Reality With The Magic Of React..."
+                text="Let's Turn Vision Into Reality With The Magic Of React..."
                 className="!text-6xl !text-left !leading-[64px]"
               />
               <AnimatedParagraph
