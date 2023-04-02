@@ -1,6 +1,8 @@
 import AnimatedText from 'componemt/src/components/AnimatedText';
 import Layout from 'componemt/src/components/Layout';
 import Head from 'next/head';
+import Image from 'next/image';
+import aboutPic from '../public/images/profile/p-m-a.png';
 
 const about = () => {
   return (
@@ -14,30 +16,45 @@ const about = () => {
       </Head>
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-10">
-          <AnimatedText text="Passion Ignites Purpose! " />
-          <div className="about-wrapper grid w-full grid-cols-8 gap-16">
+          <AnimatedText text="Passion Ignites Purpose!" className="!mb-14" />
+          <div className="about-wrapper grid w-full grid-cols-8 grid-rows-4 gap-16 ">
             <div className="col-span-4 flex flex-col items-start justify-start">
-              <h2 className="mb-2 mt-4 text-lg font-bold text-gray-700">
+              <h2 className="mb-2 mt-1 text-lg font-bold text-gray-700">
                 ABOUT ME
               </h2>
-              <p>
-                Hi, I'm Mubasshir, a react developer with a passion for creating
-                beautiful, functional, and user-centered digital experiences.
-                With one year of experience in the field. I am always looking
-                for new and innovative ways to bring my clients' visions to
-                life.
+              <p className="font-medium text-base text-gray-900">
+                Hi, I'm Mubasshir, and I am a React developer driven by a
+                passion for crafting elegant, functional, and user-centric
+                digital experiences. With a year of experience under my belt, I
+                am constantly seeking new and innovative ways to bring my
+                clients' visions to life. Let's work together to create
+                something truly beautiful and impactful.
               </p>
-              <p>
-                I believe that design is about more than just making things look
-                pretty .It's about solving problems and creating intuitive,
-                enjoyable experiences for users.
+              <p className="my-4 font-medium text-base text-gray-900">
+                I strongly believe that development goes beyond just writing
+                code; it's about solving real-world problems by creating
+                intuitive and enjoyable experiences for users. As a developer,
+                my primary objective is to understand the users' needs and
+                create solutions that exceed their expectations. I strive to
+                develop applications that are not just visually appealing but
+                also user-friendly, accessible, and functional. By blending
+                creativity with practicality, I aim to deliver products that
+                leave a lasting impact on the users and the business alike.
               </p>
-              <p>
-                Whether I'm working on a website or other digital product, I
-                bring my commitment to design excellence and user-centered
-                thinking to every project I work on. I look forward to the
-                opportunity to bring my skills and passion to your next project.
+              <p className="font-medium text-base text-gray-900">
+                Whether I am developing a website or any other digital product,
+                I bring a strong commitment to delivering excellent design and
+                user-centered thinking to every project I undertake. I am
+                excited about the prospect of applying my skills and passion to
+                your next project and helping you achieve your goals.
               </p>
+            </div>
+            <div className="about-image mt-20 row-span-full col-span-4 h-max border-2 border-solid border-gray-400 bg-transparent p-8 ">
+              <Image
+                src={aboutPic}
+                alt="mubasshir"
+                className="w-full h-full flex items-center"
+              />
             </div>
           </div>
         </Layout>
