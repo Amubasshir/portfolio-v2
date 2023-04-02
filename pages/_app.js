@@ -1,5 +1,6 @@
 import { Montserrat } from 'next/font/google';
 import Head from 'next/head';
+import 'tailwindcss/tailwind.css';
 import Footer from '/src/components/Footer';
 import Navbar from '/src/components/Navbar';
 import '/styles/globals.css';

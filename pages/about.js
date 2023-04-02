@@ -17,7 +17,7 @@ const about = () => {
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-10">
           <AnimatedText text="Passion Ignites Purpose!" className="!mb-14" />
-          <div className="about-wrapper grid w-full grid-cols-8 grid-rows-4 gap-16 ">
+          <div className="about-wrapper grid w-full grid-cols-8  gap-16 ">
             <div className="col-span-4 flex flex-col items-start justify-start">
               <h2 className="mb-2 mt-1 text-lg font-bold text-gray-700">
                 ABOUT ME
@@ -55,6 +55,25 @@ const about = () => {
                 alt="mubasshir"
                 className="w-full h-full flex items-center"
               />
+            </div>
+          </div>
+          <div className="skills relative text-4xl w-full mt-6 rounded-2xl h-60 bg-[#f1bb88c2] text-center overflow-hidden pt-4">
+            <div className="skills-header font-semibold pt-2 text-5xl  ">
+              Skills
+            </div>
+            <div className="skills-text skills-text-left  absolute whitespace-nowrap left-0 top-24 ">
+              Express&nbsp;&nbsp;&nbsp; MongoDB&nbsp;&nbsp;&nbsp;
+              React&nbsp;&nbsp;&nbsp; Javascript&nbsp;&nbsp;&nbsp;
+              HTML&nbsp;&nbsp;&nbsp; CSS&nbsp;&nbsp;&nbsp;
+              Redux&nbsp;&nbsp;&nbsp; Framer-Motion&nbsp;&nbsp;&nbsp;
+              Tailwind&nbsp;&nbsp;&nbsp; SCSS&nbsp;&nbsp;&nbsp;
+            </div>
+            <div className="skills-text skills-text-right absolute whitespace-nowrap right-0 top-44">
+              Express&nbsp;&nbsp;&nbsp; MongoDB&nbsp;&nbsp;&nbsp;
+              React&nbsp;&nbsp;&nbsp; Javascript&nbsp;&nbsp;&nbsp;
+              HTML&nbsp;&nbsp;&nbsp; CSS&nbsp;&nbsp;&nbsp;
+              Redux&nbsp;&nbsp;&nbsp; Framer-Motion&nbsp;&nbsp;&nbsp;
+              Tailwind&nbsp;&nbsp;&nbsp; SCSS&nbsp;&nbsp;&nbsp;
             </div>
           </div>
         </Layout>

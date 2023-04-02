@@ -20,3 +20,29 @@
 .nav-link:hover::after {
   width: 100%;
 }
+
+.skills-text-left {
+  animation: move 30s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.skills-text-right {
+  animation: move-right 30s linear infinite;
+}
+
+@keyframes move-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
