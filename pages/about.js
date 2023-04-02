@@ -1,4 +1,5 @@
 import AnimatedText from 'componemt/src/components/AnimatedText';
+import Bootcamp from 'componemt/src/components/Bootcamp';
 import Layout from 'componemt/src/components/Layout';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -57,11 +58,11 @@ const about = () => {
               />
             </div>
           </div>
-          <div className="skills relative text-4xl w-full mt-6 rounded-2xl h-60 bg-[#f1bb88c2] text-center overflow-hidden pt-4">
+          <div className="skills relative text-4xl w-full mt-10 rounded-2xl h-60 bg-[#f1bb88c2] text-center overflow-hidden pt-4">
             <div className="skills-header font-semibold pt-2 text-5xl  ">
               Skills
             </div>
-            <div className="skills-text skills-text-left  absolute whitespace-nowrap left-0 top-24 ">
+            <div className="skills-text skills-text-left  absolute whitespace-nowrap text-black left-0 top-24 ">
               Express&nbsp;&nbsp;&nbsp; MongoDB&nbsp;&nbsp;&nbsp;
               React&nbsp;&nbsp;&nbsp; Javascript&nbsp;&nbsp;&nbsp;
               HTML&nbsp;&nbsp;&nbsp; CSS&nbsp;&nbsp;&nbsp;
@@ -76,6 +77,7 @@ const about = () => {
               Tailwind&nbsp;&nbsp;&nbsp; SCSS&nbsp;&nbsp;&nbsp;
             </div>
           </div>
+          <Bootcamp />
         </Layout>
       </main>
     </>
