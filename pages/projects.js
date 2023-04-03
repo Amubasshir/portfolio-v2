@@ -4,25 +4,60 @@ import Layout from 'componemt/src/components/Layout';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import project1 from '../public/images/proects/images (1).jpg';
 
-const featuredProject = ({ type, title, summary, img, link, githubLink }) => {
+const FeatureProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article>
-      <Link href={link} target="_blank">
+    <article className="w-full flex items-center justify-between rounded-3xl border border-gray-500 bg-light shadow-lg p-12">
+      <Link
+        href={link}
+        target="_blank"
+        className="w=1/2 cursor-pointer overflow-hidden rounded-lg  "
+      >
         <Image src={img} alt={title} className="w-full h-auto" />
       </Link>
-      <div>
-        <span>{type}</span>
-        <Link href={link} target="_blank">
-          <h2 className="">{title}</h2>
-        </Link>
-        <p>{summary}</p>
-        <div>
-          <Link href={github} target="_blank">
+      <div className="w-1/2 flex flex-col items-start justify-between pl-6">
+        <span className="text-primary font-medium text-xl">{type}</span>
+        <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
+
+        <p className="my-2 font-medium text-black">{summary}</p>
+        <div className="flex items-center ">
+          <Link href={github} target="_blank" className="w-12 ">
             <GithubIcon />
           </Link>
-          <Link href={link} target="_blank">
+          <Link
+            href={link}
+            target="_blank"
+            className="ml-4 rounded-lg bg-black text-white p-2 px-6 text-lg font-semibold"
+          >
             Visit Project
+          </Link>
+        </div>
+      </div>
+    </article>
+  );
+};
+
+const Project = ({ type, title, img, link, github }) => {
+  return (
+    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-black bg-light p-6  relative">
+      <Link
+        href={link}
+        target="_blank"
+        className="w=full cursor-pointer overflow-hidden rounded-lg  "
+      >
+        <Image src={img} alt={title} className="w-full h-auto" />
+      </Link>
+      <div className="w-full flex flex-col items-start justify-between mt-6">
+        <span className="text-primary font-medium text-xl">{type}</span>
+        <h2 className="my-2 w-full text-left text-3xl font-bold">{title}</h2>
+
+        <div className=" w-full flex items-center justify-between ">
+          <Link href={link} target="_blank" className=" text-lg font-semibold">
+            Visit
+          </Link>
+          <Link href={github} target="_blank" className="w-10">
+            <GithubIcon />
           </Link>
         </div>
       </div>
@@ -44,16 +79,48 @@ const projects = () => {
         <Layout className="pt-10">
           <AnimatedText
             text="Where Imagination Meets Knowledge!"
-            className="!mb-14"
+            className="mb-20"
           />
 
           <div className="grid grid-col-12 gap-24">
             <div className="feature-project col-span-12 ">
-              <featuredProject />
+              <FeatureProject
+                title="A Repository Application"
+                img={project1}
+                summary="A repository application that provide easy add remove edit to any kind of repo with secure option.Enjoy the newest collection of most valuable NFTs.Please make sure that you are buying and selling most trending NFTs out there.Enjoy the newest collection of most valuable NFTs.Please make sure that you are buying and selling most trending NFTs out there."
+                link="https://nft-lands.netlify.app/"
+                github="https://github.com/Amubasshir/NFT-land"
+                type="Feature Project"
+              />
             </div>
-            <div className="feature-project col-span-6 ">project-1</div>
-            <div className="feature-project col-span-6 "> project-2</div>
-            <div className="feature-project col-span-12 ">project-3</div>
+            <div className="feature-project col-span-6 ">
+              <Project
+                title="A Repository Application"
+                img={project1}
+                link="https://nft-lands.netlify.app/"
+                github="https://github.com/Amubasshir/NFT-land"
+                type="Project"
+              />
+            </div>
+            <div className="feature-project col-span-6 ">
+              <Project
+                title="A Repository Application"
+                img={project1}
+                link="https://nft-lands.netlify.app/"
+                github="https://github.com/Amubasshir/NFT-land"
+                type="Project"
+              />
+            </div>
+            <div className="feature-project col-span-12 ">
+              <FeatureProject
+                title="A Repository Application"
+                img={project1}
+                summary="A repository application that provide easy add remove edit to any kind of repo with secure option.Enjoy the newest collection of most valuable NFTs.Please make sure that you are buying and selling most trending NFTs out there.Enjoy the newest collection of most valuable NFTs.Please make sure that you are buying and selling most trending NFTs out there."
+                link="https://nft-lands.netlify.app/"
+                github="https://github.com/Amubasshir/NFT-land"
+                type="Feature Project"
+              />
+            </div>
           </div>
         </Layout>
       </main>
