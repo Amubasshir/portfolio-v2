@@ -8,7 +8,7 @@ import project1 from '../public/images/proects/images (1).jpg';
 
 const FeatureProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="w-full flex items-center justify-between rounded-3xl border border-gray-500 bg-light shadow-lg p-12">
+    <article className="w-full flex items-center justify-between rounded-3xl border border-gray-500 bg-light shadow-md p-12">
       <Link
         href={link}
         target="_blank"
@@ -82,7 +82,7 @@ const projects = () => {
             className="mb-20"
           />
 
-          <div className="grid grid-col-12 gap-24">
+          <div className="grid grid-col-12 gap-24 gap-y-24">
             <div className="feature-project col-span-12 ">
               <FeatureProject
                 title="A Repository Application"
