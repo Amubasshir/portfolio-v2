@@ -126,25 +126,7 @@ const Details = ({ type, time, place, info, btns }) => {
         <p className="font-medium w-full mt-2 mb-4 text-gray-900 leading-7">
           {info}
         </p>
-        {/* <Link
-          href={'href'}
-          target={'_blank'}
-          className="flex items-center w-auto text-gray-50 gap-2 mt-4 px-6 py-2 justify-center bg-black rounded-lg text-lg font-serif tracking-wider hover:bg-light hover:text-dark border-solid border-transparent hover:border-dark border-2 duration-300"
-        >
-          {btn.label}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 16 16"
-            data-supported-dps="16x16"
-            fill="currentColor"
-            class="mercado-match"
-            width="18"
-            height="18"
-            focusable="false"
-          >
-            <path d="M15 1v6h-2V4.41L7.41 10 6 8.59 11.59 3H9V1zm-4 10a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1h2V3H5a3 3 0 00-3 3v5a3 3 0 003 3h5a3 3 0 003-3V9h-2z"></path>
-          </svg>
-        </Link> */}
+
         {btns.map((btn) => (
           <a
             key={btn.href}
