@@ -61,7 +61,10 @@ const contact = () => {
                 {/* right */}
                 <div className="col-span-3 w-full h-auto border border-gray-400 shadow-lg shadow-gray-400 rounded-xl lg:p-4">
                   <div className="p-4">
-                    <form>
+                    <form
+                      action="https://getform.io/f/d6f5897e-4bcd-44d0-a258-c28eb1bcf598"
+                      method="POST"
+                    >
                       <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                         <div className="flex flex-col">
                           <label className="text-sm py-2">NAME</label>
