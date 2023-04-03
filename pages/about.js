@@ -20,10 +20,10 @@ const about = () => {
           <AnimatedText text="Passion Ignites Purpose!" className="!mb-14" />
           <div className="about-wrapper grid w-full grid-cols-8  gap-16 ">
             <div className="col-span-4 flex flex-col items-start justify-start">
-              <h2 className="mb-2 mt-1 text-lg font-bold text-gray-700">
+              <h2 className="mb-2 mt-1 text-lg font-bold text-gray-800 tracking-wider">
                 ABOUT ME
               </h2>
-              <p className="font-medium text-base text-gray-900">
+              <p className="font-medium text-base text-gray-900 leading-6">
                 Hi, I'm Mubasshir, and I am a React developer driven by a
                 passion for crafting elegant, functional, and user-centric
                 digital experiences. With a year of experience under my belt, I
@@ -31,7 +31,7 @@ const about = () => {
                 clients' visions to life. Let's work together to create
                 something truly beautiful and impactful.
               </p>
-              <p className="my-4 font-medium text-base text-gray-900">
+              <p className="my-4 font-medium text-base text-gray-900 leading-6">
                 I strongly believe that development goes beyond just writing
                 code; it's about solving real-world problems by creating
                 intuitive and enjoyable experiences for users. As a developer,
@@ -42,7 +42,7 @@ const about = () => {
                 creativity with practicality, I aim to deliver products that
                 leave a lasting impact on the users and the business alike.
               </p>
-              <p className="font-medium text-base text-gray-900">
+              <p className="font-medium text-base text-gray-900 leading-6">
                 Whether I am developing a website or any other digital product,
                 I bring a strong commitment to delivering excellent design and
                 user-centered thinking to every project I undertake. I am

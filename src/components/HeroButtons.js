@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { LinkArrow } from './icons';
+import { LinkArrow } from './Icons';
 
 const buttonContainer = {
   animate: {
