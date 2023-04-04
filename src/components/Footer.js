@@ -3,7 +3,7 @@ import { GithubIcon, LinkedInIcon, TwitterIcon } from './Icons';
 
 const Footer = () => {
   return (
-    <footer className="w-full border-t-2 border-solid border-black">
+    <footer className="w-full border-t-2 border-gray-500  dark:text-light dark:border-gray-500">
       <div className="footer-wrapper py-8 flex items-center justify-between px-20">
         <div className="footer-left">
           <p className="text-base font-medium tracking-wide">
