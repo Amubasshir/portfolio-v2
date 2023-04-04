@@ -26,4 +26,15 @@ module.exports = {
     },
   },
   plugins: [require('tailwindcss-inner-border')],
+  plugins: [
+    function ({ addUtilities }) {
+      const extendUnderline = {
+        '.underline': {
+          textDecoration: 'underline',
+          'text-decoration-color': '#f39946',
+        },
+      };
+      addUtilities(extendUnderline);
+    },
+  ],
 };

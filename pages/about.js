@@ -58,12 +58,12 @@ const about = () => {
               />
             </div>
           </div>
-          <div className="skills relative text-4xl w-[100%] mt-10 rounded-2xl h-60 bg-[#f0f1ea] text-center dark:bg-[#3A3B3C] overflow-hidden pt-4">
+          <div className="skills relative text-4xl w-[100%] mt-10 rounded-2xl h-60 bg-[#f0f1ea] text-center shadow-md shadow-gray-400    dark:bg-[#3A3B3C] overflow-hidden pt-4">
             {/* <div className="skills-header dark:text-[#f1bb88] font-semibold  pt-2 text-5xl  ">
               Skills
             </div> */}
             <div>
-              <AnimatedText text="SKILLS" className="mb-5" />
+              <AnimatedText text="SKILLS" className="mb-5 text-white" />
             </div>
             <div className="skills-text skills-text-left dark:text-light mt-10  absolute whitespace-nowrap text-black left-0 top-24 ">
               Express&nbsp;&nbsp;&nbsp; MongoDB&nbsp;&nbsp;&nbsp;
