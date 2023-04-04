@@ -57,7 +57,7 @@ const AnimatedSubText = ({ text, className = '' }) => {
       animate="animated"
     >
       <motion.h1
-        className={`flex items-start w-full font-semibold text-4xl text-gray-700  ${className}`}
+        className={`flex items-start w-full font-semibold text-4xl text-gray-700 dark:text-[#9f9f9fd4]  ${className}`}
       >
         <motion.span
           variants={wordsContainerVariants}

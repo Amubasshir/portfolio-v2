@@ -30,16 +30,18 @@ const HeroButtons = () => {
       <Link
         href="https://github.com/"
         target={'_blank'}
-        className="flex items-center text-gray-50 px-6 py-2 bg-black rounded-lg text-lg font-serif tracking-wider hover:bg-light hover:text-dark border-solid border-transparent hover:border-dark border-2 duration-300 "
+        className="flex items-center text-gray-50 px-6 py-2 bg-black rounded-lg text-lg font-serif tracking-wider hover:bg-light hover:text-dark border-solid border-transparent dark:border-double hover:border-dark border-2
+        hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
+        dark:bg-light dark:text-dark duration-300 "
         download={true}
       >
         Resume
-        <LinkArrow className="w-6 ml-1" />
+        <LinkArrow className="w-6 ml-1 " />
       </Link>
       <Link
         href="mailto:mubasshir1107@gmail.com"
         target={'_blank'}
-        className="flex items-center  px-6 py-2 ml-3 rounded-lg text-lg font-serif tracking-wider hover:bg-black hover:text-white border-solid border-dark border-2 duration-300 "
+        className="flex items-center  px-6 py-2 ml-3 rounded-lg text-lg font-serif tracking-wider hover:bg-black hover:text-white border-solid border-dark border-2 dark:text-light dark:border-light hover:dark:bg-light hover:dark:text-dark inner-border hover:dark:inner-border-black  duration-300 "
       >
         Contact
       </Link>

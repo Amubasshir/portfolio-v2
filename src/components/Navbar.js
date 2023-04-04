@@ -1,7 +1,14 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { GithubIcon, LinkedInIcon, TwitterIcon } from './Icons';
+import {
+  GithubIcon,
+  LinkedInIcon,
+  MoonIcon,
+  SunIcon,
+  TwitterIcon,
+} from './Icons';
 import Logo from './Logo';
+import useThemeSwitcher from './hooks/useThemeSwitcher';
 
 const CustomLink = ({ href, title, className = '' }) => {
   return (
@@ -12,8 +19,10 @@ const CustomLink = ({ href, title, className = '' }) => {
 };
 
 const Navbar = () => {
+  const [mode, setMode] = useThemeSwitcher();
+
   return (
-    <header className="w-full px-20 py-8 font-medium flex items-center justify-between">
+    <header className="w-full px-20 py-8 dark:text-light font-medium flex items-center justify-between">
       <nav>
         <CustomLink href="/" title="Home" className="mr-4 nav-link" />
         <CustomLink
@@ -53,6 +62,19 @@ const Navbar = () => {
         >
           <GithubIcon />
         </motion.a>
+
+        <button
+          onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
+          className={`ml-3 rounded-full flex items-center justify-center  p-1 ${
+            mode === 'light' ? 'bg-dark text-light' : 'bg-light text-dark'
+          }`}
+        >
+          {mode === 'dark' ? (
+            <SunIcon className="fill-dark" />
+          ) : (
+            <MoonIcon className="fill-dark" />
+          )}
+        </button>
       </nav>
       <div className="absolute left-[50%] top-3 translate-x-[-50%]">
         <Logo />
