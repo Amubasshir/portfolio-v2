@@ -28,6 +28,24 @@ const useThemeSwitcher = () => {
       }
     };
 
+    if (userPref) {
+      let check = userPref === 'dark' ? 'dark' : 'light';
+      setMode(check);
+      if (check === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    } else {
+      let check = mediaQuery.matches ? 'dark' : 'light';
+      setMode(check);
+      if (check === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    }
+
     mediaQuery.addEventListener('change', handleChange);
 
     return () => mediaQuery.removeEventListener('change', handleChange);
@@ -37,9 +55,12 @@ const useThemeSwitcher = () => {
     if (mode === 'dark') {
       window.localStorage.setItem('theme', 'dark');
       document.documentElement.classList.add('dark');
-    } else {
+      document.documentElement.classList.remove('light'); // fix: remove 'light' class
+    }
+    if (mode === 'light') {
       window.localStorage.setItem('theme', 'light');
       document.documentElement.classList.add('light');
+      document.documentElement.classList.remove('dark');
     }
   }, [mode]);
 

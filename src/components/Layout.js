@@ -1,7 +1,7 @@
 const Layout = ({ children, className = '' }) => {
   return (
     <div
-      className={`w-full h-full inline-block z-0 bg-light p-32 dark:bg-dark
+      className={`w-full h-full inline-block z-0 bg-light p-32 dark:bg-[#18191A]
         ${className}`}
     >
       {children}

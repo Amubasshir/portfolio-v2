@@ -17,7 +17,10 @@ const about = () => {
       </Head>
       <main className="flex w-full flex-col items-center justify-center dark:text-light ">
         <Layout className="pt-10">
-          <AnimatedText text="Passion Ignites Purpose!" className="!mb-14" />
+          <AnimatedText
+            text="Passion Ignites Purpose!"
+            className="!mb-14 dark:text-red-600"
+          />
           <div className="about-wrapper dark:bg-[#242526] dark:p-5 dark:rounded-xl grid w-full grid-cols-8  gap-16 ">
             <div className="col-span-4 flex flex-col items-start justify-start">
               <h2 className="mb-2 mt-1 text-lg font-bold text-gray-800 dark:text-[#9f9f9fd4] tracking-wider">
@@ -63,7 +66,7 @@ const about = () => {
               Skills
             </div> */}
             <div>
-              <AnimatedText text="SKILLS" className="mb-5 text-white" />
+              <AnimatedText text="SKILLS" className="mb-5 dark:text-red-600" />
             </div>
             <div className="skills-text skills-text-left dark:text-light mt-10  absolute whitespace-nowrap text-black left-0 top-24 ">
               Express&nbsp;&nbsp;&nbsp; MongoDB&nbsp;&nbsp;&nbsp;

@@ -119,7 +119,7 @@ const Details = ({ type, time, place, info, btns }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: 'spring' }}
       >
-        <h3 className="font-bold text-3xl dark:text-light text-black mb-2">
+        <h3 className="font-bold text-3xl dark:text-white text-black mb-2">
           {type}
         </h3>
         <span className="font-medium dark:text-[#9f9f9fd4] text-gray-800 text-xl tracking-wider">
@@ -140,7 +140,7 @@ const Details = ({ type, time, place, info, btns }) => {
               window.open(btn.href, '_blank');
             }}
             className="flex items-center text-gray-50 px-6 py-2 bg-black rounded-lg text-lg font-serif tracking-wider hover:bg-light hover:text-dark border-solid border-transparent hover:border-dark border-2 hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
-        dark:bg-light dark:text-dark  duration-300"
+        dark:bg-white dark:text-dark  duration-300"
             style={{ maxWidth: 'fit-content' }}
           >
             <div className="flex items-center">
@@ -212,7 +212,7 @@ const Bootcamp = () => {
 
   return (
     <div className="bootCamp-container my-32">
-      <h2 className="font-bold text-8xl text-center  mb-32 w-full">
+      <h2 className="font-bold text-8xl dark:text-red-600 text-center  mb-32 w-full">
         Bootcamps/Courses
       </h2>
       <div ref={ref} className="w-[75%] mx-auto relative  " />

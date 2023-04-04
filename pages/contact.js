@@ -34,10 +34,13 @@ const contact = () => {
       </Head>
       <main>
         <Layout className="pt-10">
-          <AnimatedText text="Connect To Make A Difference" className="mb-14" />
+          <AnimatedText
+            text="Connect To Make A Difference"
+            className="mb-14 dark:text-red-600 "
+          />
           <div id="contact" className="w-full lg:h-screen">
             <div className="max-w-[1240px] m-auto px-2 pt-4 w-full ">
-              <p className="text-2 font-semibold mb-2 tracking-widest uppercase text-[#F39946]">
+              <p className="text-2 font-semibold mb-2 tracking-widest uppercase dark:text-white">
                 Get In Touch
               </p>
 
@@ -84,8 +87,8 @@ const contact = () => {
                         <h2 className="text-4xl font-semibold dark:text-light  mt-20 mb-2">
                           Thank you for your message!
                         </h2>
-                        <p className="text-xl dark:text-light leading-5">
-                          We will get back to you as soon as possible.
+                        <p className="text-lg dark:text-light leading-5">
+                          I will get back to you as soon as possible.
                         </p>
                       </div>
                     ) : (

@@ -22,7 +22,7 @@ const Navbar = () => {
   const [mode, setMode] = useThemeSwitcher();
 
   return (
-    <header className="w-full px-20 py-8 dark:text-light font-medium flex items-center justify-between">
+    <header className="w-full px-20 py-8 dark:bg-[#18191A] dark:text-light font-medium flex items-center justify-between">
       <nav>
         <CustomLink href="/" title="Home" className="mr-4 nav-link" />
         <CustomLink
