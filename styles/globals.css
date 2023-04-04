@@ -9,7 +9,7 @@
 .nav-link::after {
   content: '';
   width: 0%;
-  height: 0.15rem;
+  height: 0.05rem;
   background-color: #f59948;
   position: absolute;
   left: 50%;

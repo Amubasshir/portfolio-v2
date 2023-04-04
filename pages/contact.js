@@ -20,7 +20,7 @@ const contact = () => {
           <AnimatedText text="Connect To Make A Difference" className="mb-14" />
           <div id="contact" className="w-full lg:h-screen">
             <div className="max-w-[1240px] m-auto px-2 pt-4 w-full ">
-              <p className="text-xl mb-2 tracking-widest uppercase text-[#F39946]">
+              <p className="text-2 font-semibold mb-2 tracking-widest uppercase text-[#F39946]">
                 Get In Touch
               </p>
 
@@ -46,7 +46,7 @@ const contact = () => {
                         Are you looking for someone to collaborate on a project
                         or job with? If so, I am available and open to new
                         opportunities. Please feel free to reach out or just to
-                        say hi!? <br /> <br /> If you prefer not to use contact
+                        say hi! <br /> <br /> If you prefer not to use contact
                         forms, you can send me a direct email. I will do my best
                         to respond within 24 hours. Looking forward to hearing
                         from you at <br />{' '}
