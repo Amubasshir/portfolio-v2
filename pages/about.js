@@ -1,6 +1,7 @@
 import AnimatedText from 'componemt/src/components/AnimatedText';
 import Bootcamp from 'componemt/src/components/Bootcamp';
 import Layout from 'componemt/src/components/Layout';
+import Skills from 'componemt/src/components/Skills';
 import Head from 'next/head';
 import Image from 'next/image';
 import aboutPic from '../public/images/profile/p-m-a.png';
@@ -61,28 +62,8 @@ const about = () => {
               />
             </div>
           </div>
-          <div className="skills relative text-4xl w-[100%] mt-10 rounded-2xl h-60 bg-[#f0f1ea] text-center shadow-md shadow-gray-400    dark:bg-[#3A3B3C] overflow-hidden pt-4">
-            {/* <div className="skills-header dark:text-[#f1bb88] font-semibold  pt-2 text-5xl  ">
-              Skills
-            </div> */}
-            <div>
-              <AnimatedText text="SKILLS" className="mb-5 dark:text-red-600" />
-            </div>
-            <div className="skills-text skills-text-left dark:text-light mt-10  absolute whitespace-nowrap text-black left-0 top-24 ">
-              Express&nbsp;&nbsp;&nbsp; MongoDB&nbsp;&nbsp;&nbsp;
-              React&nbsp;&nbsp;&nbsp; Javascript&nbsp;&nbsp;&nbsp;
-              HTML&nbsp;&nbsp;&nbsp; CSS&nbsp;&nbsp;&nbsp;
-              Redux&nbsp;&nbsp;&nbsp; Framer-Motion&nbsp;&nbsp;&nbsp;
-              Tailwind&nbsp;&nbsp;&nbsp; SCSS&nbsp;&nbsp;&nbsp;
-            </div>
-            <div className="skills-text skills-text-right dark:text-light absolute whitespace-nowrap right-0 top-44">
-              Express&nbsp;&nbsp;&nbsp; MongoDB&nbsp;&nbsp;&nbsp;
-              React&nbsp;&nbsp;&nbsp; Javascript&nbsp;&nbsp;&nbsp;
-              HTML&nbsp;&nbsp;&nbsp; CSS&nbsp;&nbsp;&nbsp;
-              Redux&nbsp;&nbsp;&nbsp; Framer-Motion&nbsp;&nbsp;&nbsp;
-              Tailwind&nbsp;&nbsp;&nbsp; SCSS&nbsp;&nbsp;&nbsp;
-            </div>
-          </div>
+
+          <Skills />
           <Bootcamp />
         </Layout>
       </main>

@@ -1,8 +1,10 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { MoonIcon, SunIcon } from './Icons';
 import useThemeSwitcher from './hooks/useThemeSwitcher';
 
 const CustomLink = ({ href, title, className = '' }) => {
+  const router = useRouter();
   return (
     <Link href={href} className={`${className}`}>
       {title}
@@ -19,13 +21,13 @@ const Navbar = () => {
         <img
           src="https://i.ibb.co/gSpSyt4/m-p-logo-black.png"
           alt="logo"
-          width="100"
+          width="90"
           className="black-logo"
         />
         <img
           src="https://i.ibb.co/bHShrbd/m-p-logo-white.png"
           alt="logo"
-          width="100"
+          width="90"
           className="hidden dark:block"
         />
       </div>
