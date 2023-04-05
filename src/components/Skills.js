@@ -22,7 +22,7 @@ const Skills = () => {
         text="Skills"
         className="dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r from-pink-600 to-red-600 dark:duration-300"
       />
-      <div className="skills-wrapper grid grid-cols-2 gap-10 mt-40">
+      <div className="skills-wrapper grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-20 mt-40">
         <ul className="skills-left flex flex-col gap-10">
           {data
             .filter((_, i) => i < Math.floor(data.length / 2))
@@ -30,10 +30,12 @@ const Skills = () => {
               return (
                 <li key={skill.id} className="skill-item overflow-visible">
                   <div className="flex gap-10 items-baseline">
-                    <span className="skill-number dark:text-white/50">
+                    <span className="skill-number dark:text-white/50 text-6xl md:text-7xl">
                       {String(skill.id).padStart(2, 0).padEnd(3, '.')}
                     </span>
-                    <span className="skill-name">{skill.title}</span>
+                    <span className="skill-name text-4xl md:text:6xl tracking-wider leading-6 ">
+                      {skill.title}
+                    </span>
                   </div>
                 </li>
               );
@@ -46,10 +48,12 @@ const Skills = () => {
               return (
                 <li key={skill.id} className="skill-item overflow-hidden">
                   <div className="flex gap-10 items-baseline">
-                    <span className="skill-number dark:text-white/50">
+                    <span className="skill-number dark:text-white/50 text-6xl md:text-7xl">
                       {String(skill.id).padStart(2, 0).padEnd(3, '.')}
                     </span>
-                    <span className="skill-name">{skill.title}</span>
+                    <span className="skill-name text-4xl md:text:6xl tracking-wider leading-6 ">
+                      {skill.title}
+                    </span>
                   </div>
                 </li>
               );

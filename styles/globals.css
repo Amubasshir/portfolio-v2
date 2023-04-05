@@ -2,6 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 10px;
+  width: 10%;
+  background-color: rgb(113, 114, 117);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #db262e;
+}
+::-webkit-scrollbar-track {
+  background-color: #303134;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  width: 0%;
+  height: 0.05rem;
+  background-color: #f59948;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -3px;
+  transition: 0.3s;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
 .skill-item {
   position: relative;
 }
@@ -33,10 +70,10 @@
   width: 100%;
 }
 
-.skill-number {
+/* .skill-number {
   font-size: 5rem;
 }
 
 .skill-name {
   font-size: 2rem;
-}
+} */

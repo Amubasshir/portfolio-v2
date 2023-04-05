@@ -18,15 +18,16 @@ export default function Home() {
         <Layout className="pt-0">
           <div className="hero-section flex items-center justify-between w-full">
             <div className="hero-text w-1/2 flex flex-col items-center self-center">
-              <AnimatedSubText text="I'm Mubasshir," />
+              <AnimatedSubText
+                text="I'm Mubasshir,"
+                className="dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r from-pink-600 to-red-600 dark:duration-300"
+              />
               <AnimatedText
                 text="Let's Turn Vision Into Reality With The Magic Of React..."
-                className="!text-6xl !text-left !leading-[64px]"
+                className="!text-6xl !text-left !leading-[64px] dark:text-white/80"
               />
               <AnimatedParagraph
-                text="As a react developer, my passion is to transform ideas into
-                dynamic and efficient web applications. Explore my latest
-                projects, showcasing my expertise in web development."
+                text="As a react developer, my passion is to transform ideas into dynamic and efficient web applications with a strong attention to detail. Explore my latest projects, which showcase my proficiency in web-development."
                 className=""
               />
               <div className="hero-buttons flex items-center mt-2  self-start">

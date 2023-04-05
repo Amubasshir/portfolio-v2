@@ -11,7 +11,6 @@ const contact = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    // Send form data
     try {
       await fetch('https://getform.io/f/d6f5897e-4bcd-44d0-a258-c28eb1bcf598', {
         method: 'POST',
@@ -39,7 +38,7 @@ const contact = () => {
             className="mb-14 pb-10  dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r from-pink-600 to-red-600 dark:duration-300 "
           />
           <div id="contact" className="w-full lg:h-screen">
-            <div className="max-w-[1240px] m-auto px-2 pt-4 w-full ">
+            <div className="container m-auto px-2 pt-4 w-full ">
               <p className="text-2 font-semibold mb-2 tracking-widest uppercase dark:text-white">
                 Get In Touch
               </p>
