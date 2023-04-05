@@ -83,7 +83,7 @@ const projects = () => {
         <Layout className="pt-10">
           <AnimatedText
             text="Where Imagination Meets Knowledge!"
-            className="mb-20 text-4xl dark:text-red-600"
+            className="mb-20 pb-10  dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r from-pink-600 to-red-600 dark:duration-300"
           />
 
           <div className="grid grid-col-12 gap-24 gap-y-24">

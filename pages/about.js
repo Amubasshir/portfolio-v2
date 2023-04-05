@@ -20,8 +20,9 @@ const about = () => {
         <Layout className="pt-10">
           <AnimatedText
             text="Passion Ignites Purpose!"
-            className="!mb-14 dark:text-red-600"
+            className="!mb-14 pb-10  dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r from-pink-600 to-red-600 dark:duration-300"
           />
+
           <div className="about-wrapper dark:bg-[#242526] dark:p-5 dark:rounded-xl grid w-full grid-cols-8  gap-16 ">
             <div className="col-span-4 flex flex-col items-start justify-start">
               <h2 className="mb-2 mt-1 text-lg font-bold text-gray-800 dark:text-[#9f9f9fd4] tracking-wider">

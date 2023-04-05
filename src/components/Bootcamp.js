@@ -212,7 +212,7 @@ const Bootcamp = () => {
 
   return (
     <div className="bootCamp-container my-32">
-      <h2 className="font-bold text-8xl dark:text-red-600 text-center  mb-32 w-full">
+      <h2 className="font-bold text-8xl pb-10  dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r from-pink-600 to-red-600 dark:duration-300 text-center  mb-32 w-full">
         Bootcamps/Courses
       </h2>
       <div ref={ref} className="w-[75%] mx-auto relative  " />

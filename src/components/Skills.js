@@ -18,7 +18,10 @@ const data = [
 const Skills = () => {
   return (
     <div className="skills container mx-auto mt-40" id="skills">
-      <AnimatedText text="Skills" className="dark:text-red-600" />
+      <AnimatedText
+        text="Skills"
+        className="dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r from-pink-600 to-red-600 dark:duration-300"
+      />
       <div className="skills-wrapper grid grid-cols-2 gap-10 mt-40">
         <ul className="skills-left flex flex-col gap-10">
           {data
