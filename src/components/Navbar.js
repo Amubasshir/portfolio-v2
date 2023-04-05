@@ -18,14 +18,14 @@ const Navbar = () => {
 
   return (
     <motion.header
-      initial={{ y: 25, opacity: 0 }}
+      initial={{ y: -25, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{
         duration: 0.75,
       }}
       className="w-full px-28 py-2 dark:bg-[#18191A] dark:text-light font-medium flex items-center justify-between"
     >
-      <div>
+      <Link href="/">
         <img
           src="https://i.ibb.co/gSpSyt4/m-p-logo-black.png"
           alt="logo"
@@ -38,7 +38,7 @@ const Navbar = () => {
           width="90"
           className="hidden dark:block"
         />
-      </div>
+      </Link>
 
       <nav className="left flex items-center">
         <div>

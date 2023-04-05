@@ -18,10 +18,7 @@ const about = () => {
       </Head>
       <main className="flex w-full flex-col items-center justify-center dark:text-light ">
         <Layout className="pt-10">
-          <AnimatedText
-            text="Passion Ignites Purpose!"
-            className="!mb-14 pb-10  dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r from-pink-600 to-red-600 dark:duration-300"
-          />
+          <AnimatedText text="Passion Ignites Purpose!" className="!mb-16" />
 
           <div className="about-wrapper dark:bg-[#242526] dark:p-5 dark:rounded-xl grid w-full grid-cols-8  gap-16 ">
             <div className="col-span-4 flex flex-col items-start justify-start">
