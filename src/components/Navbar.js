@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { MoonIcon, SunIcon } from './Icons';
@@ -16,7 +17,14 @@ const Navbar = () => {
   const [mode, setMode] = useThemeSwitcher();
 
   return (
-    <header className="w-full px-28 py-2 dark:bg-[#18191A] dark:text-light font-medium flex items-center justify-between">
+    <motion.header
+      initial={{ y: 25, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 0.75,
+      }}
+      className="w-full px-28 py-2 dark:bg-[#18191A] dark:text-light font-medium flex items-center justify-between"
+    >
       <div>
         <img
           src="https://i.ibb.co/gSpSyt4/m-p-logo-black.png"
@@ -77,7 +85,7 @@ const Navbar = () => {
           display: ${mode === 'dark' ? 'none' : 'block'};
         }
       `}</style>
-    </header>
+    </motion.header>
   );
 };
 

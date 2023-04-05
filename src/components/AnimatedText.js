@@ -51,7 +51,7 @@ const wordsContainerVariants = {
 const AnimatedText = ({ text, className = '' }) => {
   return (
     <div
-      className="w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden"
+      className="w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden sm:py-0"
       variants={quote}
       initial="initial"
       animate="animated"

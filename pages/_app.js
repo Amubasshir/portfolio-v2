@@ -1,30 +1,65 @@
+import Footer from 'componemt/src/components/Footer';
+import Navbar from 'componemt/src/components/Navbar';
+import { AnimatePresence, motion } from 'framer-motion';
 import { Montserrat } from 'next/font/google';
 import Head from 'next/head';
-import 'tailwindcss/tailwind.css';
-import Footer from '/src/components/Footer';
-import Navbar from '/src/components/Navbar';
-import '/styles/globals.css';
+import { useRouter } from 'next/router';
+import '../styles/globals.css';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-mont',
 });
 
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps }) {
+  const router = useRouter();
   return (
-    <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="https://i.ibb.co/prDbCz4/m-p-logo-black.png" />
-      </Head>
-      <main
-        className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={router.route}
+        initial="initialState"
+        animate="animateState"
+        exit="exitState"
+        transition={{
+          duration: 0.45,
+        }}
+        variants={{
+          initialState: {
+            opacity: 0,
+            clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)',
+          },
+          animateState: {
+            opacity: 1,
+            clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)',
+          },
+          exitState: {
+            clipPath: 'polygon(50% 0, 50% 0, 50% 100%, 50% 100%)',
+          },
+        }}
+        className="base-page-size"
       >
-        <Navbar />
-        <Component {...pageProps} />
+        <>
+          <Head>
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1"
+            />
+            <link
+              rel="icon"
+              href="https://i.ibb.co/prDbCz4/m-p-logo-black.png"
+            />
+          </Head>
+          <main
+            className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}
+          >
+            <Navbar />
+            <Component {...pageProps} />
 
-        <Footer />
-      </main>
-    </>
+            <Footer />
+          </main>
+        </>
+      </motion.div>
+    </AnimatePresence>
   );
 }
+export default App;
