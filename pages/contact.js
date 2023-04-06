@@ -35,18 +35,18 @@ const contact = () => {
         <Layout className="pt-10">
           <AnimatedText
             text="Connect To Make A Difference"
-            className="mb-14 dark:text-[#DB2649] "
+            className="mb-14 dark:text-[#DB2649] xl:!text-7xl lg:!text-6xl md:!text-5xl sm:!text-4xl xs:!text-2xl md:!mb-8 "
           />
-          <div id="contact" className="w-full lg:h-screen">
-            <div className=" m-auto px-2 pt-4 w-full ">
+          <div id="contact" className="w-full h-auto">
+            <div className=" m-auto px-2 py-16 w-full ">
               <p className="text-2 font-semibold mb-2 tracking-widest uppercase dark:text-white">
                 Get In Touch
               </p>
 
-              <div className="grid lg:grid-cols-5 gap-8">
+              <div className="grid grid-cols-12 lg:flex lg:flex-col gap-8">
                 {/* left */}
-                <div className="col-span-3 lg:col-span-2 w-full h-full shadow-lg border border-gray-400 shadow-gray-400 rounded-xl p-4">
-                  <div className="lg:p-4 h-full ">
+                <div className="col-span-4 md:col-span-4 w-full h-full shadow-lg border border-gray-400 shadow-gray-400 rounded-xl p-4">
+                  <div className="lg:p-4  ">
                     <div className="h-1/2">
                       <Image
                         className="rounded-xl w-full h-[100%] hover:scale-105  ease-in duration-300"
@@ -61,7 +61,7 @@ const contact = () => {
                       <p className="text-gray-700 dark:text-[#9f9f9fd4] tracking-wider">
                         React Developer
                       </p>
-                      <p className="py-4 text-base dark:text-light font-medium text-black/75 leading-5">
+                      <p className="py-4 md:py-2 text-base md:text-xs dark:text-light font-medium text-black/75 leading-5">
                         Are you looking for someone to collaborate on a project
                         or job with? If so, I am available and open to new
                         opportunities. Please feel free to reach out or just to
@@ -69,7 +69,7 @@ const contact = () => {
                         forms, you can send me a direct email. I will do my best
                         to respond within 24 hours. Looking forward to hearing
                         from you at <br />{' '}
-                        <span className="text-lg underline underline-offset-4  cursor-pointer dark:text-light dark:underline duration-300">
+                        <span className="text-lg md:text-base underline underline-offset-4  cursor-pointer dark:text-light dark:underline duration-300">
                           lastmubasshir@gmail.com
                         </span>
                       </p>
@@ -79,14 +79,14 @@ const contact = () => {
 
                 {/* right */}
 
-                <div className="col-span-3 w-full h-auto border border-gray-400 shadow-lg shadow-gray-400 rounded-xl lg:p-4">
-                  <div className="p-4">
+                <div className="col-span-8 md:col-span-4 w-full h-auto  border border-gray-400 shadow-lg shadow-gray-400 rounded-xl lg:p-4">
+                  <div className="p-4 ">
                     {formSubmitted ? (
-                      <div className="success-message  flex flex-col items-center justify-center">
-                        <h2 className="text-4xl font-semibold dark:text-light  mt-20 mb-2">
+                      <div className="success-message  flex flex-col items-center justify-center md:-mt-8 md:mb-10">
+                        <h2 className="text-4xl font-semibold md:text-3xl md:font-normal  dark:text-light  mt-20 mb-2">
                           Thank you for your message!
                         </h2>
-                        <p className="text-lg dark:text-light leading-5">
+                        <p className="text-lg md:text-base dark:text-light leading-5">
                           I will get back to you as soon as possible.
                         </p>
                       </div>
@@ -97,26 +97,28 @@ const contact = () => {
                         method="POST"
                         action="https://getform.io/f/d6f5897e-4bcd-44d0-a258-c28eb1bcf598"
                       >
-                        <div className="grid md:grid-cols-2 gap-4 w-full py-2">
-                          <div className="flex flex-col">
-                            <label className="text-sm dark:text-light py-2">
-                              NAME
-                            </label>
-                            <input
-                              className="border-2 dark:text-light rounded-lg p-3 flex bg-transparent border-gray-400"
-                              type="text"
-                              name="name"
-                            />
-                          </div>
-                          <div className="flex flex-col">
-                            <label className="uppercase dark:text-light text-sm py-2">
-                              Phone Number
-                            </label>
-                            <input
-                              className="border-2 dark:text-light rounded-lg p-3 flex bg-transparent border-gray-400"
-                              type="number"
-                              name="phone"
-                            />
+                        <div className="flex flex-col gap-4 w-full py-2">
+                          <div className="flex items-center justify-between gap-4 lg:flex-col">
+                            <div className="flex flex-col w-full ">
+                              <label className="text-sm dark:text-light py-2">
+                                NAME
+                              </label>
+                              <input
+                                className="border-2 dark:text-light rounded-lg p-3 flex bg-transparent border-gray-400"
+                                type="text"
+                                name="name"
+                              />
+                            </div>
+                            <div className="flex flex-col w-full">
+                              <label className="uppercase dark:text-light text-sm py-2">
+                                Phone Number
+                              </label>
+                              <input
+                                className="border-2 dark:text-light rounded-lg p-3 flex bg-transparent border-gray-400"
+                                type="number"
+                                name="phone"
+                              />
+                            </div>
                           </div>
                         </div>
                         <div className="flex flex-col py-2">
