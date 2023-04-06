@@ -35,7 +35,7 @@ const contact = () => {
         <Layout className="pt-10">
           <AnimatedText
             text="Connect To Make A Difference"
-            className="mb-14 dark:text-[#DB2649] xl:!text-7xl lg:!text-6xl md:!text-5xl sm:!text-4xl xs:!text-2xl md:!mb-8 "
+            className="mb-14 dark:!text-[#DB2649] xl:!text-7xl lg:!text-6xl md:!text-5xl sm:!text-4xl xs:!text-2xl md:!mb-8 "
           />
           <div id="contact" className="w-full h-auto">
             <div className=" m-auto px-2 py-16 w-full ">
