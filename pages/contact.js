@@ -35,10 +35,10 @@ const contact = () => {
         <Layout className="pt-10">
           <AnimatedText
             text="Connect To Make A Difference"
-            className="mb-14  "
+            className="mb-14 dark:text-[#DB2649] "
           />
           <div id="contact" className="w-full lg:h-screen">
-            <div className="container m-auto px-2 pt-4 w-full ">
+            <div className=" m-auto px-2 pt-4 w-full ">
               <p className="text-2 font-semibold mb-2 tracking-widest uppercase dark:text-white">
                 Get In Touch
               </p>

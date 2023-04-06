@@ -20,7 +20,7 @@ const about = () => {
         <Layout className="pt-10">
           <AnimatedText
             text="Passion Ignites Purpose!"
-            className="!mb-16 lg:!text-7xl md:!text-6xl sm:!text-5xl xs:!text-3xl md:!mb-8 "
+            className="!mb-14 dark:text-[#DB2649] lg:!text-7xl md:!text-6xl sm:!text-5xl xs:!text-3xl md:!mb-8 "
           />
 
           <div className="about-wrapper dark:bg-[#242526] dark:p-5 dark:rounded-xl grid w-full grid-cols-8 md:flex md:items-center md:justify-center   gap-16 md:gap-8 ">
