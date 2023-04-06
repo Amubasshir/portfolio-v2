@@ -25,21 +25,18 @@ function App({ Component, pageProps }) {
         }}
         variants={{
           initialState: {
+            backgroundColor: '#F49A4D !important',
             opacity: 0,
             clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)',
-            backgroundColor: '#F49A4D',
           },
           animateState: {
             opacity: 1,
             clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)',
-            backgroundColor: '#F49A4D',
+            backgroundColor: '#F49A4D !important',
           },
           exitState: {
             clipPath: 'polygon(50% 0, 50% 0, 50% 100%, 50% 100%)',
           },
-        }}
-        style={{
-          backgroundColor: '#F49A4D',
         }}
         className="base-page-size"
       >

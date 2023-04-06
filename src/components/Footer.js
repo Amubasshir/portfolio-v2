@@ -3,10 +3,10 @@ import { GithubIcon, LinkedInIcon, TwitterIcon } from './Icons';
 
 const Footer = () => {
   return (
-    <footer className="w-full border-t-2 border-gray-500 dark:bg-[#18191A]  dark:text-light dark:border-gray-500">
-      <div className="footer-wrapper py-8 flex items-center justify-between px-20">
+    <footer className="w-full border-t-2 border-gray-500 dark:bg-[#18191A]  dark:text-light dark:border-gray-500 ">
+      <div className="footer-wrapper py-8 md:flex-col md:py-6 md:gap-4 flex items-center justify-between px-20">
         <div className="footer-left">
-          <p className="text-base font-medium tracking-wide">
+          <p className="text-base md:text-sm font-medium tracking-wide">
             &copy;{new Date().getFullYear()}{' '}
             <span>Mubasshir Ahmed. All right reserved.</span>{' '}
           </p>
@@ -18,7 +18,7 @@ const Footer = () => {
               target="_blank"
               whileTap={{ scale: 0.5 }}
               whileHover={{ y: -3 }}
-              className="w-6 mx-2"
+              className="w-6 mx-2 md:w-4"
             >
               <LinkedInIcon />
             </motion.a>
@@ -28,7 +28,7 @@ const Footer = () => {
               target="_blank"
               whileTap={{ scale: 0.5 }}
               whileHover={{ y: -3 }}
-              className="w-6 mx-2"
+              className="w-6 mx-2 md:w-4"
             >
               <GithubIcon />
             </motion.a>
@@ -38,7 +38,7 @@ const Footer = () => {
               target="_blank"
               whileTap={{ scale: 0.5 }}
               whileHover={{ y: -3 }}
-              className="w-6 ml-2"
+              className="w-6 ml-2 md:w-4"
             >
               <TwitterIcon />
             </motion.a>
