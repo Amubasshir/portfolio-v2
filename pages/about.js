@@ -16,16 +16,19 @@ const about = () => {
           content="It's about the Mubasshir Ahmed about page"
         />
       </Head>
-      <main className="flex w-full flex-col items-center justify-center dark:text-light ">
+      <main className="flex w-full flex-col  items-center justify-center dark:text-light ">
         <Layout className="pt-10">
-          <AnimatedText text="Passion Ignites Purpose!" className="!mb-16" />
+          <AnimatedText
+            text="Passion Ignites Purpose!"
+            className="!mb-16 lg:!text-7xl md:!text-6xl sm:!text-5xl xs:!text-3xl md:!mb-8 "
+          />
 
-          <div className="about-wrapper dark:bg-[#242526] dark:p-5 dark:rounded-xl grid w-full grid-cols-8  gap-16 ">
-            <div className="col-span-4 flex flex-col items-start justify-start">
-              <h2 className="mb-2 mt-1 text-lg font-bold text-gray-800 dark:text-[#9f9f9fd4] tracking-wider">
+          <div className="about-wrapper dark:bg-[#242526] dark:p-5 dark:rounded-xl grid w-full grid-cols-8 md:flex md:items-center md:justify-center   gap-16 md:gap-8 ">
+            <div className="col-span-4 md:w-full  flex flex-col items-start justify-start">
+              <h2 className="mb-2 mt-1 text-lg md:text-base sm:text-sm font-bold text-gray-800 dark:text-[#9f9f9fd4] tracking-wider">
                 ABOUT ME
               </h2>
-              <p className="font-medium text-base text-gray-900 dark:text-light leading-6">
+              <p className="font-medium text-base text-gray-900 dark:text-light leading-6 sm:text-sm">
                 Hi, I'm Mubasshir, and I am a React developer driven by a
                 passion for crafting elegant, functional, and user-centric
                 digital experiences. With a year of experience under my belt, I
@@ -44,7 +47,7 @@ const about = () => {
                 creativity with practicality, I aim to deliver products that
                 leave a lasting impact on the users and the business alike.
               </p>
-              <p className="font-medium text-base text-gray-900 dark:text-light leading-6">
+              <p className="font-medium text-base text-gray-900 dark:text-light leading-6 md:-mb-10">
                 Whether I am developing a website or any other digital product,
                 I bring a strong commitment to delivering excellent design and
                 user-centered thinking to every project I undertake. I am
@@ -52,7 +55,7 @@ const about = () => {
                 your next project and helping you achieve your goals.
               </p>
             </div>
-            <div className="about-image mt-20 row-span-full col-span-4 h-max border-2 border-solid border-gray-400 bg-transparent p-8 ">
+            <div className="about-image mt-20 row-span-full col-span-4 h-max border-2 border-solid border-gray-400 bg-transparent p-8 md:hidden ">
               <Image
                 src={aboutPic}
                 alt="mubasshir"
