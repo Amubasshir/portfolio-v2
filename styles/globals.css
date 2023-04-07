@@ -69,3 +69,31 @@
 .skill-item:hover::after {
   width: 100%;
 }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin-slow {
+  animation-name: rotate;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.svg-container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.svg-container svg.eye {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

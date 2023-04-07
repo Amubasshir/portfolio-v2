@@ -37,10 +37,10 @@ const FeatureProject = ({
           {title}
         </h2>
         <div className="flex gap-2 ">
-          <p className=" flex items-center bg-[#c1c2bb43] text-gray-800 px-4 py-2 shadow-sm shadow-gray-300 rounded-lg tracking-widest text-xs  dark:shadow-gray-600  dark:bg-[#1b2332bc] border-solid border-sky-900 dark:border-gray-600 border dark:text-white/80">
+          <p className=" flex items-center bg-[#c1c2bb43] text-gray-800 px-3 py-1 shadow-sm shadow-gray-300 rounded-lg tracking-widest text-[10px] dark:text-[10px]  dark:shadow-gray-600  dark:bg-[#1b2332bc] border-solid border-sky-900 dark:border-gray-600 border dark:text-white/80">
             {sub1}
           </p>
-          <p className=" flex items-center bg-[#c1c2bb43] text-gray-800 px-4 py-2  rounded-lg shadow-sm shadow-gray-300 tracking-widest text-xs dark:shadow-sm dark:shadow-gray-600  dark:bg-[#1b2332bc] border-solid border-sky-900 dark:border-gray-600 border dark:text-white/80">
+          <p className=" flex items-center bg-[#c1c2bb43] text-gray-800 px-3 py-1  rounded-lg shadow-sm shadow-gray-300 tracking-widest text-xs dark:shadow-sm dark:shadow-gray-600  dark:bg-[#1b2332bc] border-solid border-sky-900 dark:border-gray-600 border dark:text-white/80">
             {sub2}
           </p>
         </div>
@@ -103,15 +103,72 @@ const Project = ({ type, title, img, link, summary, github }) => {
             {summary}
           </p>
           <div className=" w-full dark:text-light  flex items-center justify-between ">
-            <Link
+            {/* <Link
               href={link}
               target="_blank"
               className=" flex items-center text-white px-4 py-2 bg-black rounded-lg text-base font-serif tracking-wider hover:bg-light hover:text-dark border-solid border-transparent hover:border-dark border-2 hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
         dark:bg-white dark:text-black  duration-300 md:px-4 md:py-2 md:text-sm"
             >
               Visit
+            </Link> */}
+            <Link href="/" target="_blank">
+              <div
+                className="project-live-button"
+                style={{ position: 'relative', width: 'max-content' }}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  className="textcircle block w-20 animate-spin animate-spin-slow"
+                  viewBox="0 0 500 500"
+                >
+                  <defs>
+                    <path
+                      id="textcircle"
+                      d="M250,400 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"
+                    />
+                  </defs>
+                  <text className="">
+                    <textPath
+                      xlinkHref="#textcircle"
+                      aria-label="Click To See Live Site"
+                      textLength="900"
+                      className="text-6xl font-serif"
+                    >
+                      Click To See Live Site
+                    </textPath>
+                  </text>
+                </svg>
+
+                <svg
+                  className="eye absolute w-10 h-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                  aria-hidden="true"
+                  viewBox="0 0 70 70"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    className="eye__outer stroke-black fill-none w-[1px]"
+                    d="M10.5 35.308c5.227-7.98 14.248-13.252 24.5-13.252s19.273 5.271 24.5 13.252c-5.227 7.98-14.248 13.253-24.5 13.253s-19.273-5.272-24.5-13.253z"
+                  />
+                  <path
+                    className="eye__lashes-up stroke-black fill-none w-[1px]"
+                    d="M35 8.802v8.836M49.537 11.383l-3.31 8.192M20.522 11.684l3.31 8.192"
+                  />
+                  <path
+                    className="eye__lashes-down stroke-black fill-none w-[1px]"
+                    d="M35 61.818v-8.836 8.836zM49.537 59.237l-3.31-8.193 3.31 8.193zM20.522 58.936l3.31-8.193-3.31 8.193z"
+                  />
+                  <circle className="eye__iris" cx="35" cy="35.31" r="5.221" />
+                  <circle
+                    className="eye__inner stroke-black fill-none w-[1px] "
+                    cx="35"
+                    cy="35.31"
+                    r="10.041"
+                  />
+                </svg>
+              </div>
             </Link>
-            <Link href={github} target="_blank" className="w-10 md:w-8">
+            <Link href={github} target="_blank" className="w-12 md:w-10">
               <GithubIcon />
             </Link>
           </div>
