@@ -4,7 +4,7 @@ import Layout from 'componemt/src/components/Layout';
 import Skills from 'componemt/src/components/Skills';
 import Head from 'next/head';
 import Image from 'next/image';
-import aboutPic from '../public/images/profile/p-m-a.png';
+import aboutPic from '../public/images/profile/about.png';
 
 const about = () => {
   return (
@@ -55,7 +55,7 @@ const about = () => {
                 your next project and helping you achieve your goals.
               </p>
             </div>
-            <div className="about-image mt-20 row-span-full col-span-4 h-max border-2 border-solid border-gray-400 bg-transparent p-8 md:hidden ">
+            <div className="about-image  row-span-full col-span-4 h-max border-2 border-solid border-gray-400 bg-transparent p-8 md:hidden ">
               <Image
                 src={aboutPic}
                 alt="mubasshir"

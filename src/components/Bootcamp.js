@@ -36,7 +36,7 @@ const Details = ({ type, time, place, info, btns }) => {
               e.preventDefault();
               window.open(btn.href, '_blank');
             }}
-            className="flex items-center text-black px-6 py-2 bg-black rounded-lg text-lg font-serif tracking-wider hover:bg-light hover:text-dark border-solid border-transparent hover:border-dark border-2 hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
+            className="flex items-center text-white px-6 py-2 bg-black rounded-lg text-lg font-serif tracking-wider hover:bg-light hover:text-dark border-solid border-transparent hover:border-dark border-2 hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
         dark:bg-white dark:text-black  duration-300"
             style={{ maxWidth: 'fit-content' }}
           >

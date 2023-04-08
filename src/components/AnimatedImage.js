@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import profilePic from '../../public/images/profile/p-m-h.png';
+import profilePic from '../../public/images/profile/devv.png';
 
 const image = {
   initial: {
@@ -24,7 +24,7 @@ const AnimatedImage = ({ className = '' }) => {
       initial="initial"
       animate="animated"
     >
-      <Image src={profilePic} alt="Profile picture" />
+      <Image src={profilePic} alt="Profile picture" className="" />
     </motion.div>
   );
 };

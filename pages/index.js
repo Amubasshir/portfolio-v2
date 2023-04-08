@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import profilePic from '../public/images/profile/p-m-h.png';
+import profilePic from '../public/images/profile/devv.png';
 import AnimatedImage from '/src/components/AnimatedImage';
 import AnimatedParagraph from '/src/components/AnimatedParagraph';
 import AnimatedSubText from '/src/components/AnimatedSubText';
