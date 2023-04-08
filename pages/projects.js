@@ -6,7 +6,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import project3 from '../public/images/proects/mbank.png';
-import project1 from '../public/images/proects/nft-land-collage.png';
+import project4 from '../public/images/proects/mubsic.png';
+import project1 from '../public/images/proects/nft.png';
 import project2 from '../public/images/proects/prr.png';
 const FeatureProject = ({
   type,
@@ -25,11 +26,11 @@ const FeatureProject = ({
       <Link
         href={link}
         target="_blank"
-        className="w=1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full  "
+        className="w-full cursor-pointer overflow-hidden rounded-lg lg:w-full  "
       >
         <Image src={img} alt={title} className="w-full h-auto" />
       </Link>
-      <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6  ">
+      <div className="w-full flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6  ">
         <span className="text-primary font-medium text-xl xs:text-base">
           {type}
         </span>
@@ -42,6 +43,12 @@ const FeatureProject = ({
           </p>
           <p className=" flex items-center bg-[#c1c2bb43] text-gray-800 px-3 py-1  rounded-lg shadow-sm shadow-gray-300 tracking-widest text-xs dark:shadow-sm dark:shadow-gray-600  dark:bg-[#1b2332bc] border-solid border-sky-900 dark:border-gray-600 border dark:text-white/80">
             {sub2}
+          </p>
+          <p className=" flex items-center bg-[#c1c2bb43] text-gray-800 px-3 py-1  rounded-lg shadow-sm shadow-gray-300 tracking-widest text-xs dark:shadow-sm dark:shadow-gray-600  dark:bg-[#1b2332bc] border-solid border-sky-900 dark:border-gray-600 border dark:text-white/80">
+            {sub3}
+          </p>
+          <p className=" flex items-center bg-[#c1c2bb43] text-gray-800 px-3 py-1  rounded-lg shadow-sm shadow-gray-300 tracking-widest text-xs dark:shadow-sm dark:shadow-gray-600  dark:bg-[#1b2332bc] border-solid border-sky-900 dark:border-gray-600 border dark:text-white/80">
+            {sub4}
           </p>
         </div>
 
@@ -62,7 +69,7 @@ const FeatureProject = ({
             animate={{
               scale: [1, 1.2, 1],
               y: [0, -10, 0],
-              transition: { duration: 0.5, ease: 'easeInOut' },
+              transition: { duration: 0.9, ease: 'easeInOut' },
             }}
           >
             <GithubIcon />
@@ -90,7 +97,7 @@ const Project = ({ type, title, img, link, summary, github }) => {
           target="_blank"
           className="w=full dark:text-light  cursor-pointer overflow-hidden rounded-lg  "
         >
-          <Image src={img} alt={title} className="w-full h-auto" />
+          <Image src={img} alt={title} className="w-full h-auto rounded-lg" />
         </Link>
         <div className="w-full flex flex-col items-start justify-between mt-6">
           <span className="text-primary font-medium text-xl lg:text-lg md:text-base ">
@@ -111,7 +118,7 @@ const Project = ({ type, title, img, link, summary, github }) => {
             >
               Visit
             </Link> */}
-            <Link href="/" target="_blank">
+            <Link href={link} target="_blank">
               <div
                 className="project-live-button"
                 style={{ position: 'relative', width: 'max-content' }}
@@ -248,43 +255,49 @@ const projects = () => {
           <div className="grid grid-col-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0 ">
             <div className="feature-project col-span-12 ">
               <FeatureProject
-                title="A Repository Application"
-                img={project1}
-                sub1="MERN"
-                sub2="Tailwind"
-                summary="A repository application that provide easy add remove edit to any kind of repo with secure option.Enjoy the newest collection of most valuable NFTs.Please make sure that you are buying and selling most trending NFTs out there.Enjoy the newest collection of most valuable NFTs.Please make sure that you are buying and selling most trending NFTs out there."
-                link="https://nft-lands.netlify.app/"
-                github="https://github.com/Amubasshir/NFT-land"
-                type="Feature Project"
-              />
-            </div>
-            <div className="feature-project col-span-6 md:col-span-12 ">
-              <Project
-                title="A Repository Application"
-                img={project2}
-                link="https://nft-lands.netlify.app/"
-                github="https://github.com/Amubasshir/NFT-land"
-                type="Project"
-                summary="A repository application that provide easy add remove edit to any kind of repo with secure option.Enjoy the newest collection of most valuable NFTs.Please make sure that you are buying and selling most trending NFTs out there.Enjoy the newest collection of most valuable NFTs.Please make sure that you are buying and selling most trending NFTs out there."
-              />
-            </div>
-            <div className="feature-project col-span-6 md:col-span-12 ">
-              <Project
-                title="A Repository Application"
+                title="A Modern Bank Website"
                 img={project3}
-                summary="A repository application that provide easy add remove edit to any kind of repo with secure option.Enjoy the newest collection of most valuable NFTs.Please make sure that you are buying and selling most trending NFTs out there.Enjoy the newest collection of most valuable NFTs.Please make sure that you are buying and selling most trending NFTs out there."
+                sub1="React"
+                sub2="Tailwind"
+                sub3="Responsive"
+                sub4="Smooth-scroll"
+                summary="MooBank is a modern, user-friendly application that offers a range of financial services to its customers. The website provides a seamless experience on any device. It features a clean, minimalist design with a predominantly dark color scheme, giving it a professional and trustworthy look. MooBank offers a range of banking services, including checking and savings accounts, loans, and credit cards. The website is easy to navigate, and customers can quickly access the information they need to manage their finances effectively."
+                link="https://moo-bank.netlify.app/"
+                github="https://github.com/Amubasshir/moo-bank"
+                type="Landing page"
+              />
+            </div>
+            <div className="feature-project col-span-6 md:col-span-12 ">
+              <Project
+                title="A Music Application"
+                img={project4}
+                link="https://mubsic.netlify.app/"
+                github="https://github.com/Amubasshir/mubsic"
+                type="Landing Page"
+                summary="This is a landing page of Mubsic website that provide the details information about the application. The website provides a seamless experience on any device. It features a clean, minimalist design with a predominantly dark color scheme, giving it a professional and trustworthy look. The website is easy to navigate, and customers can quickly access the information they need to manage their finances effectively."
+              />
+            </div>
+            <div className="feature-project col-span-6 md:col-span-12 ">
+              <Project
+                title="A NFT MarketPlace"
+                img={project1}
+                summary="This is a landing page of NFT-land website that provides the details in formation of this nft marketplace. The website provides a seamless experience on any device. It features a clean, minimalist design with a predominantly dark color scheme, giving it a professional and trustworthy look. The website is easy to navigate, and customers can quickly access the information they need to manage their finances effectively. "
                 link="https://nft-lands.netlify.app/"
                 github="https://github.com/Amubasshir/NFT-land"
-                type="Project"
+                type="Landing Page"
               />
             </div>
             <div className="feature-project col-span-12 ">
               <FeatureProject
                 title="A Repository Application"
-                img={project1}
+                img={project2}
+                sub1="MERN"
+                sub2="Tailwind"
+                sub3="Firebase"
+                sub4="JWT"
                 summary="A repository application that provide easy add remove edit to any kind of repo with secure option.Enjoy the newest collection of most valuable NFTs.Please make sure that you are buying and selling most trending NFTs out there.Enjoy the newest collection of most valuable NFTs.Please make sure that you are buying and selling most trending NFTs out there."
-                link="https://nft-lands.netlify.app/"
-                github="https://github.com/Amubasshir/NFT-land"
+                link="https://pro-repo.vercel.app/"
+                github="https://github.com/Amubasshir/pro-repo"
                 type="Feature Project"
               />
             </div>
