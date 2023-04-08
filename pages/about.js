@@ -60,6 +60,7 @@ const about = () => {
                 src={aboutPic}
                 alt="mubasshir"
                 className="w-full h-full flex items-center"
+                priority
               />
             </div>
           </div>

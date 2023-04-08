@@ -52,6 +52,7 @@ const contact = () => {
                         className="rounded-xl w-full h-[100%] hover:scale-105  ease-in duration-300"
                         src={ContactImg}
                         alt="/"
+                        priority
                       />
                     </div>
                     <div>

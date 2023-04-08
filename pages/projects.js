@@ -45,6 +45,7 @@ const FeatureProject = ({
             src={isHovering ? altImg : img}
             alt={title}
             className="w-full h-auto rounded-2xl"
+            priority
           />
         </Link>
       </motion.div>
@@ -126,6 +127,7 @@ const Project = ({ type, title, img, altImg, link, summary, github }) => {
               src={isHovering ? altImg : img}
               alt={title}
               className="w-full h-auto rounded-xl"
+              priority
             />
           </Link>
         </motion.div>
