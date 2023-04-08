@@ -23,7 +23,7 @@ const Navbar = () => {
       transition={{
         duration: 0.75,
       }}
-      className="w-full px-28 py-2 dark:bg-[#18191A] dark:text-light font-medium flex items-center justify-between  lg:px-14 md:px-10 sm:px-6"
+      className="w-full px-28 py-2 dark:bg-[#23272F] dark:text-light font-medium flex items-center justify-between  lg:px-14 md:px-10 sm:px-6"
     >
       <Link href="/">
         <img

@@ -7,7 +7,7 @@ const Details = ({ type, time, place, info, btns }) => {
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto hover:dark:shadow-lg hover:dark:shadow-gray-400 flex dark:rounded-2xl flex-col items-center dark:p-5 dark:bg-[#242526] dark:text-light justify-between"
+      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto hover:dark:shadow-lg hover:dark:shadow-gray-400 flex dark:rounded-2xl flex-col items-center dark:p-5 dark:bg-[#2d333b] dark:text-light justify-between"
     >
       <LiIcon reference={ref} />
 
