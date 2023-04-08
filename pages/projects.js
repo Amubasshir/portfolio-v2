@@ -5,15 +5,21 @@ import { motion } from 'framer-motion';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 import project3 from '../public/images/proects/mbank.png';
+import project5 from '../public/images/proects/moo-bank-collage.png';
+import project6 from '../public/images/proects/mubsic-2.png';
 import project4 from '../public/images/proects/mubsic.png';
+import project7 from '../public/images/proects/nft-land-collage.png';
 import project1 from '../public/images/proects/nft.png';
+import project8 from '../public/images/proects/pr.png';
 import project2 from '../public/images/proects/prr.png';
 const FeatureProject = ({
   type,
   title,
   summary,
   img,
+  altImg,
   link,
   github,
   sub1,
@@ -21,15 +27,27 @@ const FeatureProject = ({
   sub3,
   sub4,
 }) => {
+  const [isHovering, setIsHovering] = useState(false);
   return (
     <article className="w-full flex items-center justify-between rounded-3xl border border-gray-600 bg-light shadow-md p-12 dark:bg-[#2D333B] lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl sx:p-4 ">
-      <Link
-        href={link}
-        target="_blank"
-        className="w-full cursor-pointer overflow-hidden rounded-lg lg:w-full  "
+      <motion.div
+        onHoverStart={() => setIsHovering(true)}
+        onHoverEnd={() => setIsHovering(false)}
+        transition={{ duration: 0.9 }}
+        whileHover={{ scale: 1.05 }}
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
-      </Link>
+        <Link
+          href={link}
+          target="_blank"
+          className="w-full cursor-pointer overflow-hidden rounded-lg lg:w-full  "
+        >
+          <Image
+            src={isHovering ? altImg : img}
+            alt={title}
+            className="w-full h-auto rounded-2xl"
+          />
+        </Link>
+      </motion.div>
       <div className="w-full flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6  ">
         <span className="text-primary font-medium text-xl xs:text-base">
           {type}
@@ -88,17 +106,29 @@ const FeatureProject = ({
   );
 };
 
-const Project = ({ type, title, img, link, summary, github }) => {
+const Project = ({ type, title, img, altImg, link, summary, github }) => {
+  const [isHovering, setIsHovering] = useState(false);
   return (
     <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-gray-600 border-solid  bg-light p-6  relative dark:bg-[#2D333B] xs:p-4 ">
       <div className="">
-        <Link
-          href={link}
-          target="_blank"
-          className="w=full dark:text-light  cursor-pointer overflow-hidden rounded-lg  "
+        <motion.div
+          onHoverStart={() => setIsHovering(true)}
+          onHoverEnd={() => setIsHovering(false)}
+          transition={{ duration: 0.9 }}
+          whileHover={{ scale: 1.05 }}
         >
-          <Image src={img} alt={title} className="w-full h-auto rounded-lg" />
-        </Link>
+          <Link
+            href={link}
+            target="_blank"
+            className="w=full dark:text-light  cursor-pointer overflow-hidden rounded-lg  "
+          >
+            <Image
+              src={isHovering ? altImg : img}
+              alt={title}
+              className="w-full h-auto rounded-xl"
+            />
+          </Link>
+        </motion.div>
         <div className="w-full flex flex-col items-start justify-between mt-6">
           <span className="text-primary font-medium text-xl lg:text-lg md:text-base ">
             {type}
@@ -110,14 +140,6 @@ const Project = ({ type, title, img, link, summary, github }) => {
             {summary}
           </p>
           <div className=" w-full dark:text-light  flex items-center justify-between ">
-            {/* <Link
-              href={link}
-              target="_blank"
-              className=" flex items-center text-white px-4 py-2 bg-black rounded-lg text-base font-serif tracking-wider hover:bg-light hover:text-dark border-solid border-transparent hover:border-dark border-2 hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
-        dark:bg-white dark:text-black  duration-300 md:px-4 md:py-2 md:text-sm"
-            >
-              Visit
-            </Link> */}
             <Link href={link} target="_blank">
               <div
                 className="project-live-button"
@@ -257,6 +279,7 @@ const projects = () => {
               <FeatureProject
                 title="A Modern Bank Website"
                 img={project3}
+                altImg={project5}
                 sub1="React"
                 sub2="Tailwind"
                 sub3="Responsive"
@@ -271,6 +294,7 @@ const projects = () => {
               <Project
                 title="A Music Application"
                 img={project4}
+                altImg={project6}
                 link="https://mubsic.netlify.app/"
                 github="https://github.com/Amubasshir/mubsic"
                 type="Landing Page"
@@ -281,6 +305,7 @@ const projects = () => {
               <Project
                 title="A NFT MarketPlace"
                 img={project1}
+                altImg={project7}
                 summary="This is a landing page of NFT-land website that provides the details in formation of this nft marketplace. The website provides a seamless experience on any device. It features a clean, minimalist design with a predominantly dark color scheme, giving it a professional and trustworthy look. The website is easy to navigate, and customers can quickly access the information they need to manage their finances effectively. "
                 link="https://nft-lands.netlify.app/"
                 github="https://github.com/Amubasshir/NFT-land"
@@ -291,6 +316,7 @@ const projects = () => {
               <FeatureProject
                 title="A Repository Application"
                 img={project2}
+                altImg={project8}
                 sub1="MERN"
                 sub2="Tailwind"
                 sub3="Firebase"

@@ -30,9 +30,9 @@ const HeroButtons = () => {
       <Link
         href="https://github.com/"
         target={'_blank'}
-        className="flex items-center text-gray-50 px-6 py-2 bg-dark rounded-lg text-lg font-serif tracking-wider hover:bg-[#f0f1ea] hover:text-black border-solid border-transparent dark:border-double hover:border-dark border-2
+        className="flex items-center text-white px-6 py-2 bg-dark rounded-lg text-lg font-serif tracking-wider hover:bg-[#f0f1ea] hover:text-black border-solid border-transparent dark:border-double hover:border-dark border-2
         hover:dark:bg-dark hover:dark:text-white hover:dark:border-white
-        dark:bg-light dark:text-black duration-300 md:p-2 md:px-4 md:text-base "
+        dark:bg-white dark:text-black duration-300 md:p-2 md:px-4 md:text-base "
         download={true}
       >
         Resume
