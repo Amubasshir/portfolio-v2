@@ -116,54 +116,104 @@ const Project = ({ type, title, img, link, summary, github }) => {
                 className="project-live-button"
                 style={{ position: 'relative', width: 'max-content' }}
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                  className="textcircle block w-20 animate-spin animate-spin-slow"
-                  viewBox="0 0 500 500"
+                <div
+                  className="project-live-button"
+                  style={{ position: 'relative', width: 'max-content' }}
                 >
-                  <defs>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                    className="textcircle block w-20 animate-spin animate-spin-slow"
+                    viewBox="0 0 500 500"
+                  >
+                    <defs>
+                      <path
+                        id="textcircle"
+                        d="M250,400 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"
+                      />
+                    </defs>
+                    <text className="">
+                      <textPath
+                        xlinkHref="#textcircle"
+                        aria-label="Click To See Live Site"
+                        textLength="900"
+                        className="text-6xl font-serif"
+                        style={{
+                          fill: 'currentColor',
+                          transition: 'fill 0.2s',
+                        }}
+                      >
+                        Click To See Live Site
+                      </textPath>
+                    </text>
+                  </svg>
+                  <svg
+                    className="eye absolute w-10 h-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                    aria-hidden="true"
+                    viewBox="0 0 70 70"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path
-                      id="textcircle"
-                      d="M250,400 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"
+                      className="eye__outer stroke-black fill-none w-[1px]"
+                      d="M10.5 35.308c5.227-7.98 14.248-13.252 24.5-13.252s19.273 5.271 24.5 13.252c-5.227 7.98-14.248 13.253-24.5 13.253s-19.273-5.272-24.5-13.253z"
                     />
-                  </defs>
-                  <text className="">
-                    <textPath
-                      xlinkHref="#textcircle"
-                      aria-label="Click To See Live Site"
-                      textLength="900"
-                      className="text-6xl font-serif"
-                    >
-                      Click To See Live Site
-                    </textPath>
-                  </text>
-                </svg>
+                    <path
+                      className="eye__lashes-up animate-hide stroke-black fill-none w-[1px]"
+                      d="M35 8.802v8.836M49.537 11.383l-3.31 8.192M20.522 11.684l3.31 8.192"
+                    />
+                    <path
+                      className="eye__lashes-down hidden animate-show stroke-black fill-none w-[1px]"
+                      d="M35 61.818v-8.836 8.836zM49.537 59.237l-3.31-8.193 3.31 8.193zM20.522 58.936l3.31-8.193-3.31 8.193z"
+                    />
+                    <circle
+                      className="eye__iris animate-hide"
+                      cx="35"
+                      cy="35.31"
+                      r="5.221"
+                    />
+                    <circle
+                      className="eye__inner animate-hide stroke-black fill-none w-[1px]"
+                      cx="35"
+                      cy="35.31"
+                      r="10.041"
+                    />
+                  </svg>
+                </div>
 
                 <svg
-                  className="eye absolute w-10 h-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                  className="eye absolute w-10 h-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 dark:(stroke-white)"
                   aria-hidden="true"
                   viewBox="0 0 70 70"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    className="eye__outer stroke-black fill-none w-[1px]"
+                    className="eye__outer stroke-current fill-none w-[1px]"
                     d="M10.5 35.308c5.227-7.98 14.248-13.252 24.5-13.252s19.273 5.271 24.5 13.252c-5.227 7.98-14.248 13.253-24.5 13.253s-19.273-5.272-24.5-13.253z"
+                    stroke="currentColor"
                   />
                   <path
-                    className="eye__lashes-up stroke-black fill-none w-[1px]"
+                    className="eye__lashes-up animate-hide stroke-current fill-none w-[1px]"
                     d="M35 8.802v8.836M49.537 11.383l-3.31 8.192M20.522 11.684l3.31 8.192"
+                    stroke="currentColor"
                   />
                   <path
-                    className="eye__lashes-down stroke-black fill-none w-[1px]"
+                    className="eye__lashes-down hidden animate-show stroke-current fill-none w-[1px]"
                     d="M35 61.818v-8.836 8.836zM49.537 59.237l-3.31-8.193 3.31 8.193zM20.522 58.936l3.31-8.193-3.31 8.193z"
+                    stroke="currentColor"
                   />
-                  <circle className="eye__iris" cx="35" cy="35.31" r="5.221" />
                   <circle
-                    className="eye__inner stroke-black fill-none w-[1px] "
+                    className="eye__iris animate-hide stroke-current"
+                    cx="35"
+                    cy="35.31"
+                    r="5.221"
+                    stroke="currentColor"
+                  />
+                  <circle
+                    className="eye__inner animate-hide stroke-current fill-none w-[1px]"
                     cx="35"
                     cy="35.31"
                     r="10.041"
+                    stroke="currentColor"
                   />
                 </svg>
               </div>

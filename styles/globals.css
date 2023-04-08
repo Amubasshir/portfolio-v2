@@ -70,6 +70,25 @@
   width: 100%;
 }
 
+/* @keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation-name: rotate;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.textcircle:hover {
+  animation-play-state: paused;
+} */
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -78,11 +97,16 @@
     transform: rotate(360deg);
   }
 }
+
 .animate-spin-slow {
   animation-name: rotate;
   animation-duration: 15s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+}
+
+.textcircle:hover {
+  animation-play-state: paused !important;
 }
 
 .svg-container {
@@ -96,4 +120,44 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.eye:hover .animate-hide {
+  animation-play-state: paused !important;
+}
+
+.eye:hover .animate-show {
+  animation-play-state: running !important;
+}
+
+@keyframes hide {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+}
+
+.animate-hide {
+  animation-name: hide !important;
+  animation-duration: 2s !important;
+  animation-iteration-count: infinite !important;
+  animation-timing-function: steps(1, end) !important;
+}
+
+.animate-show {
+  animation-name: show;
+  animation-duration: 2s !important;
+  animation-iteration-count: infinite !important;
+  animation-timing-function: steps(1, end) !important;
 }
