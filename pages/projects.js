@@ -29,7 +29,7 @@ const FeatureProject = ({
 }) => {
   const [isHovering, setIsHovering] = useState(false);
   return (
-    <article className="w-full flex items-center justify-between rounded-3xl border border-gray-600 bg-light shadow-md p-12 dark:bg-[#2D333B] lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl sx:p-4 ">
+    <article className="w-full  flex items-center justify-between rounded-3xl border border-gray-600 bg-light shadow-md p-12 dark:bg-[#2D333B] lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl sx:p-4 ">
       <motion.div
         onHoverStart={() => setIsHovering(true)}
         onHoverEnd={() => setIsHovering(false)}
@@ -50,17 +50,17 @@ const FeatureProject = ({
         </Link>
       </motion.div>
       <div className="w-full flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6  ">
-        <span className="text-primary font-medium text-xl xs:text-base">
+        <span className="text-primary font-medium text-xl xs:text-sm">
           {type}
         </span>
-        <h2 className="my-2 w-full dark:text-light  text-left text-4xl font-bold xs:text-sm ">
+        <h2 className="my-2 w-full dark:text-light  text-left text-4xl font-bold xs:text-2xl ">
           {title}
         </h2>
-        <div className="flex gap-2 ">
+        <div className="flex xs:hidden gap-2 ">
           <p className=" flex items-center bg-[#c1c2bb43] text-gray-800 px-3 py-1 shadow-sm shadow-gray-300 rounded-lg tracking-widest text-[10px] dark:text-[10px]  dark:shadow-gray-600  dark:bg-[#1b2332bc] border-solid border-sky-900 dark:border-gray-600 border dark:text-white/80">
             {sub1}
           </p>
-          <p className=" flex items-center bg-[#c1c2bb43] text-gray-800 px-3 py-1  rounded-lg shadow-sm shadow-gray-300 tracking-widest text-xs dark:shadow-sm dark:shadow-gray-600  dark:bg-[#1b2332bc] border-solid border-sky-900 dark:border-gray-600 border dark:text-white/80">
+          <p className=" flex  items-center bg-[#c1c2bb43] text-gray-800 px-3 py-1  rounded-lg shadow-sm shadow-gray-300 tracking-widest text-xs dark:shadow-sm dark:shadow-gray-600  dark:bg-[#1b2332bc] border-solid border-sky-900 dark:border-gray-600 border dark:text-white/80">
             {sub2}
           </p>
           <p className=" flex items-center bg-[#c1c2bb43] text-gray-800 px-3 py-1  rounded-lg shadow-sm shadow-gray-300 tracking-widest text-xs dark:shadow-sm dark:shadow-gray-600  dark:bg-[#1b2332bc] border-solid border-sky-900 dark:border-gray-600 border dark:text-white/80">
@@ -71,7 +71,9 @@ const FeatureProject = ({
           </p>
         </div>
 
-        <p className="my-2 dark:text-light font-medium text-black">{summary}</p>
+        <p className="my-2 dark:text-light xs:text-base font-medium xs:font-light  text-black xs:mb-4">
+          {summary}
+        </p>
         <div className="flex items-center dark:text-light  ">
           <motion.a
             href={github}
@@ -132,16 +134,20 @@ const Project = ({ type, title, img, altImg, link, summary, github }) => {
           </Link>
         </motion.div>
         <div className="w-full flex flex-col items-start justify-between mt-6">
-          <span className="text-primary font-medium text-xl lg:text-lg md:text-base ">
+          <span className="text-primary font-medium text-xl lg:text-lg md:text-base xs:text-sm ">
             {type}
           </span>
           <h2 className="my-2 dark:text-light  w-full text-left text-3xl font-bold lg:text-2xl  ">
             {title}
           </h2>
-          <p className="my-2 dark:text-light font-medium text-black">
+          <p className="my-2 dark:text-light xs:text-base font-medium xs:font-light text-black xs:mb-4">
             {summary}
           </p>
           <div className=" w-full dark:text-light  flex items-center justify-between ">
+            <Link href={github} target="_blank" className="w-12 md:w-10">
+              <GithubIcon />
+            </Link>
+
             <Link href={link} target="_blank">
               <div
                 className="project-live-button"
@@ -154,7 +160,7 @@ const Project = ({ type, title, img, altImg, link, summary, github }) => {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlnsXlink="http://www.w3.org/1999/xlink"
-                    className="textcircle block w-20 animate-spin animate-spin-slow"
+                    className="textcircle block w-16 xs:w-10 animate-spin animate-spin-slow"
                     viewBox="0 0 500 500"
                   >
                     <defs>
@@ -179,7 +185,7 @@ const Project = ({ type, title, img, altImg, link, summary, github }) => {
                     </text>
                   </svg>
                   <svg
-                    className="eye absolute w-10 h-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                    className="eye absolute w-8 h-8 xs:w-6 xs:h-6 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                     aria-hidden="true"
                     viewBox="0 0 70 70"
                     xmlns="http://www.w3.org/2000/svg"
@@ -212,7 +218,7 @@ const Project = ({ type, title, img, altImg, link, summary, github }) => {
                 </div>
 
                 <svg
-                  className="eye absolute w-10 h-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 dark:(stroke-white)"
+                  className="eye absolute w-8 h-8 xs:w-6 xs:h-6 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 dark:(stroke-white)"
                   aria-hidden="true"
                   viewBox="0 0 70 70"
                   xmlns="http://www.w3.org/2000/svg"
@@ -248,9 +254,6 @@ const Project = ({ type, title, img, altImg, link, summary, github }) => {
                   />
                 </svg>
               </div>
-            </Link>
-            <Link href={github} target="_blank" className="w-12 md:w-10">
-              <GithubIcon />
             </Link>
           </div>
         </div>

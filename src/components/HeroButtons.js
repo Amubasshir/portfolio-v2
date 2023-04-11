@@ -39,8 +39,7 @@ const HeroButtons = () => {
         <LinkArrow className="w-6 ml-1 " />
       </Link>
       <Link
-        href="mailto:mubasshir1107@gmail.com"
-        target={'_blank'}
+        href="/contact"
         className="flex items-center  px-6 py-2 ml-3 rounded-lg text-lg font-serif tracking-wider hover:bg-dark hover:text-white border-solid border-black border-2 dark:text-light dark:border-white hover:dark:bg-light hover:dark:text-black dark:bg-dark inner-border hover:dark:inner-border-black  duration-300 md:p-2 md:px-4 md:text-base "
       >
         Contact

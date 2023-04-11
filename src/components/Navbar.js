@@ -72,9 +72,9 @@ const Navbar = () => {
             }`}
           >
             {mode === 'dark' ? (
-              <SunIcon className="fill-dark" />
+              <SunIcon className="fill-dark xs:w-8 !important" />
             ) : (
-              <MoonIcon className="fill-dark" />
+              <MoonIcon className="fill-dark xs:w-8 !important" />
             )}
           </button>
         </div>

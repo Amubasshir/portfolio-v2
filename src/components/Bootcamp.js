@@ -7,7 +7,7 @@ const Details = ({ type, time, place, info, btns }) => {
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto hover:dark:shadow-lg hover:dark:shadow-gray-400 flex dark:rounded-2xl flex-col items-center dark:p-5 dark:bg-[#2d333b] dark:text-light justify-between"
+      className="my-8 first:mt-0 last:mb-0 xs:my-4  w-[60%] xs:w-full mx-auto hover:dark:shadow-lg hover:dark:shadow-black/50 flex dark:rounded-2xl flex-col items-center dark:p-5 dark:bg-[#2d333b] dark:text-light justify-between"
     >
       <LiIcon reference={ref} />
 
@@ -16,10 +16,10 @@ const Details = ({ type, time, place, info, btns }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: 'spring' }}
       >
-        <h3 className="font-bold text-3xl dark:text-white text-black mb-2">
+        <h3 className="font-bold text-3xl xs:text-2xl dark:text-white text-black mb-2">
           {type}
         </h3>
-        <span className="font-medium dark:text-[#9f9f9fd4] text-gray-800 text-xl tracking-wider">
+        <span className="font-medium dark:text-[#9f9f9fd4] text-gray-800 text-xl xs:text-lg tracking-wider">
           {time} || {place}
         </span>
         <p className="font-medium dark:text-light w-full mt-2 mb-4 text-gray-900 leading-7">
@@ -109,13 +109,13 @@ const Bootcamp = () => {
 
   return (
     <div className="bootCamp-container my-32">
-      <h2 className="font-bold text-8xl pb-10  dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r from-pink-600 to-red-600 dark:duration-300 text-center  mb-32 w-full lg:!text-6xl md:!text-5xl sm:!text-4xl xs:!text-xl">
+      <h2 className="font-bold text-8xl pb-10  dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r from-pink-600 to-red-600 dark:duration-300 text-center  mb-32 xs:mb-6 w-full lg:!text-6xl md:!text-5xl sm:!text-4xl xs:!text-3xl">
         Bootcamps/Courses
       </h2>
       <div ref={ref} className="w-[75%] mx-auto relative  " />
       <motion.div
         style={{ scaleY: scrollYProgress }}
-        className="absolute left-9 top-0 w-[4px] h-full bg-black dark:bg-light origin-top"
+        className="absolute left-9 top-0 w-[4px] xs:hidden h-full  bg-black dark:bg-light origin-top"
       />
 
       <ul className="flex flex-col gap-12" style={{ position: 'relative' }}>
@@ -131,7 +131,7 @@ const Bootcamp = () => {
         ))}
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-9 top-0 w-[4px] h-full dark:bg-light bg-black origin-top"
+          className="absolute left-9 top-0 w-[4px] xs:hidden h-full dark:bg-light bg-black origin-top"
         />
       </ul>
     </div>

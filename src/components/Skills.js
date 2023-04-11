@@ -10,14 +10,14 @@ const data = [
   { id: 7, title: 'Next.JS' },
   { id: 8, title: 'Node.js' },
   { id: 9, title: 'Express' },
-  { id: 10, title: 'MongoDB' },
-  { id: 11, title: 'Firebase' },
-  { id: 12, title: 'Framer Motion' },
+  { id: 10, title: ' MongoDB' },
+  { id: 11, title: ' Firebase' },
+  { id: 12, title: ' Framer Motion' },
 ];
 
 const Skills = () => {
   return (
-    <div className="skills mt-40" id="skills">
+    <div className="skills mt-40 xs:mt-14" id="skills">
       <AnimatedText
         text="Skills"
         className="!mb-16 lg:!text-7xl md:!text-6xl sm:!text-5xl xs:!text-3xl dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r from-pink-600 to-red-600 dark:duration-300"
@@ -30,10 +30,10 @@ const Skills = () => {
               return (
                 <li key={skill.id} className="skill-item overflow-visible">
                   <div className="flex gap-10 items-baseline">
-                    <span className="skill-number dark:text-white/50 text-6xl xl:text-6xl md:text-5xl sm:text-2xl">
+                    <span className="skill-number dark:text-white/50 text-6xl xl:text-6xl md:text-5xl sm:text-2xl ">
                       {String(skill.id).padStart(2, 0).padEnd(3, '.')}
                     </span>
-                    <span className="skill-name text-4xl lg:text-4xl md:text-3xl sm:text-4xl tracking-wider leading-6 ">
+                    <span className="skill-name text-4xl lg:text-4xl md:text-3xl sm:text-3xl xs:text-3xl xs:font-medium tracking-wider leading-6 ">
                       {skill.title}
                     </span>
                   </div>
@@ -48,10 +48,10 @@ const Skills = () => {
               return (
                 <li key={skill.id} className="skill-item overflow-hidden">
                   <div className="flex gap-10 items-baseline">
-                    <span className="skill-number dark:text-white/50 text-6xl xl:text-6xl md:text-5xl sm:text-2xl">
+                    <span className="skill-number dark:text-white/50 text-6xl xl:text-6xl md:text-5xl sm:text-2xl ">
                       {String(skill.id).padStart(2, 0).padEnd(3, '.')}
                     </span>
-                    <span className="skill-name text-4xl lg:text-4xl md:text-3xl sm:text-4xl tracking-wider leading-6  ">
+                    <span className="skill-name text-4xl lg:text-4xl md:text-3xl sm:text-3xl xs:text-3xl xs:font-medium tracking-wider leading-6  ">
                       {skill.title}
                     </span>
                   </div>

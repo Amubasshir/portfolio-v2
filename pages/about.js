@@ -23,7 +23,7 @@ const about = () => {
             className="!mb-14 dark:!text-[#DB2649] lg:!text-7xl md:!text-6xl sm:!text-5xl xs:!text-3xl md:!mb-8 "
           />
 
-          <div className="about-wrapper dark:bg-[#2d333b] dark:p-5 dark:rounded-xl grid w-full  grid-cols-8 md:flex md:items-center md:justify-center   gap-16 md:gap-8 ">
+          <div className="about-wrapper dark:bg-[#2d333b] dark:p-5 dark:rounded-xl grid w-full  grid-cols-8 md:flex md:items-center md:justify-center  gap-16 md:gap-8 ">
             <div className="col-span-4 md:w-full  md:flex md:flex-col items-start justify-start">
               <h2 className="mb-2 mt-1 text-lg md:text-base sm:text-sm font-bold text-gray-800 dark:text-[#9f9f9fd4] tracking-wider">
                 ABOUT ME
