@@ -1,5 +1,6 @@
 import AnimatedText from 'componemt/src/components/AnimatedText';
 import Bootcamp from 'componemt/src/components/Bootcamp';
+import Certification from 'componemt/src/components/Certification';
 import Layout from 'componemt/src/components/Layout';
 import Skills from 'componemt/src/components/Skills';
 import Head from 'next/head';
@@ -67,6 +68,7 @@ const about = () => {
 
           <Skills />
           <Bootcamp />
+          <Certification />
         </Layout>
       </main>
     </>

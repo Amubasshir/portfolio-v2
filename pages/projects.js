@@ -57,7 +57,7 @@ const FeatureProject = ({
           {title}
         </h2>
         <div className="flex xs:hidden gap-2 ">
-          <p className=" flex items-center bg-[#c1c2bb43] text-gray-800 px-3 py-1 shadow-sm shadow-gray-300 rounded-lg tracking-widest text-[10px] dark:text-[10px]  dark:shadow-gray-600  dark:bg-[#1b2332bc] border-solid border-sky-900 dark:border-gray-600 border dark:text-white/80">
+          <p className=" flex items-center bg-[#c1c2bb43] text-gray-800 px-3 py-1  rounded-lg shadow-sm shadow-gray-300 tracking-widest text-xs dark:shadow-sm dark:shadow-gray-600  dark:bg-[#1b2332bc] border-solid border-sky-900 dark:border-gray-600 border dark:text-white/80">
             {sub1}
           </p>
           <p className=" flex  items-center bg-[#c1c2bb43] text-gray-800 px-3 py-1  rounded-lg shadow-sm shadow-gray-300 tracking-widest text-xs dark:shadow-sm dark:shadow-gray-600  dark:bg-[#1b2332bc] border-solid border-sky-900 dark:border-gray-600 border dark:text-white/80">
