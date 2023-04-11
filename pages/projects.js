@@ -6,8 +6,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import project3 from '../public/images/proects/mbank.png';
-import project5 from '../public/images/proects/moo-bank-collage.png';
+import projectm2 from '../public/images/proects/movie-p-1.png';
+import projectm1 from '../public/images/proects/movie-p-2.png';
 import project6 from '../public/images/proects/mubsic-2.png';
 import project4 from '../public/images/proects/mubsic.png';
 import project7 from '../public/images/proects/nft-land-collage.png';
@@ -74,7 +74,7 @@ const FeatureProject = ({
         <p className="my-2 dark:text-light xs:text-base font-medium xs:font-light  text-black xs:mb-4">
           {summary}
         </p>
-        <div className="flex items-center dark:text-light  ">
+        <div className="flex items-center gap-4 dark:text-light  ">
           <motion.a
             href={github}
             target="_blank"
@@ -95,13 +95,112 @@ const FeatureProject = ({
           >
             <GithubIcon />
           </motion.a>
-          <Link
-            href={link}
-            target="_blank"
-            className="ml-4 flex items-center text-white px-6 py-2 bg-black rounded-lg text-lg font-serif tracking-wider hover:bg-light hover:text-dark border-solid border-transparent hover:border-dark border-2 hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
-        dark:bg-white dark:text-black  duration-300 md:px-4 md:py-2 md:text-sm "
-          >
-            Live Site
+          <Link href={link} target="_blank">
+            <div
+              className="project-live-button"
+              style={{ position: 'relative', width: 'max-content' }}
+            >
+              <div
+                className="project-live-button"
+                style={{ position: 'relative', width: 'max-content' }}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  className="textcircle block w-16 xs:w-10 animate-spin animate-spin-slow"
+                  viewBox="0 0 500 500"
+                >
+                  <defs>
+                    <path
+                      id="textcircle"
+                      d="M250,400 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"
+                    />
+                  </defs>
+                  <text className="">
+                    <textPath
+                      xlinkHref="#textcircle"
+                      aria-label="Click To See Live Site"
+                      textLength="900"
+                      className="text-6xl font-serif"
+                      style={{
+                        fill: 'currentColor',
+                        transition: 'fill 0.2s',
+                      }}
+                    >
+                      Click To See Live Site
+                    </textPath>
+                  </text>
+                </svg>
+                <svg
+                  className="eye absolute w-8 h-8 xs:w-6 xs:h-6 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                  aria-hidden="true"
+                  viewBox="0 0 70 70"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    className="eye__outer stroke-black fill-none w-[1px]"
+                    d="M10.5 35.308c5.227-7.98 14.248-13.252 24.5-13.252s19.273 5.271 24.5 13.252c-5.227 7.98-14.248 13.253-24.5 13.253s-19.273-5.272-24.5-13.253z"
+                  />
+                  <path
+                    className="eye__lashes-up animate-hide stroke-black fill-none w-[1px]"
+                    d="M35 8.802v8.836M49.537 11.383l-3.31 8.192M20.522 11.684l3.31 8.192"
+                  />
+                  <path
+                    className="eye__lashes-down hidden animate-show stroke-black fill-none w-[1px]"
+                    d="M35 61.818v-8.836 8.836zM49.537 59.237l-3.31-8.193 3.31 8.193zM20.522 58.936l3.31-8.193-3.31 8.193z"
+                  />
+                  <circle
+                    className="eye__iris animate-hide"
+                    cx="35"
+                    cy="35.31"
+                    r="5.221"
+                  />
+                  <circle
+                    className="eye__inner animate-hide stroke-black fill-none w-[1px]"
+                    cx="35"
+                    cy="35.31"
+                    r="10.041"
+                  />
+                </svg>
+              </div>
+
+              <svg
+                className="eye absolute w-8 h-8 xs:w-6 xs:h-6 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 dark:(stroke-white)"
+                aria-hidden="true"
+                viewBox="0 0 70 70"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  className="eye__outer stroke-current fill-none w-[1px]"
+                  d="M10.5 35.308c5.227-7.98 14.248-13.252 24.5-13.252s19.273 5.271 24.5 13.252c-5.227 7.98-14.248 13.253-24.5 13.253s-19.273-5.272-24.5-13.253z"
+                  stroke="currentColor"
+                />
+                <path
+                  className="eye__lashes-up animate-hide stroke-current fill-none w-[1px]"
+                  d="M35 8.802v8.836M49.537 11.383l-3.31 8.192M20.522 11.684l3.31 8.192"
+                  stroke="currentColor"
+                />
+                <path
+                  className="eye__lashes-down hidden animate-show stroke-current fill-none w-[1px]"
+                  d="M35 61.818v-8.836 8.836zM49.537 59.237l-3.31-8.193 3.31 8.193zM20.522 58.936l3.31-8.193-3.31 8.193z"
+                  stroke="currentColor"
+                />
+                <circle
+                  className="eye__iris animate-hide stroke-current"
+                  cx="35"
+                  cy="35.31"
+                  r="5.221"
+                  stroke="currentColor"
+                />
+                <circle
+                  className="eye__inner animate-hide stroke-current fill-none w-[1px]"
+                  cx="35"
+                  cy="35.31"
+                  r="10.041"
+                  stroke="currentColor"
+                />
+              </svg>
+            </div>
           </Link>
         </div>
       </div>
@@ -118,7 +217,7 @@ const Project = ({ type, title, img, altImg, link, summary, github }) => {
           onHoverStart={() => setIsHovering(true)}
           onHoverEnd={() => setIsHovering(false)}
           transition={{ duration: 0.9 }}
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.02 }}
         >
           <Link
             href={link}
@@ -282,17 +381,17 @@ const projects = () => {
           <div className="grid grid-col-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0 ">
             <div className="feature-project col-span-12 ">
               <FeatureProject
-                title="A Modern Bank Website"
-                img={project3}
-                altImg={project5}
+                title="A Movie Info Website"
+                img={projectm1}
+                altImg={projectm2}
                 sub1="React"
-                sub2="Tailwind"
+                sub2="API"
                 sub3="Responsive"
-                sub4="Smooth-scroll"
-                summary="MooBank is a modern, user-friendly application that offers a range of financial services to its customers. The website provides a seamless experience on any device. It features a clean, minimalist design with a predominantly dark color scheme, giving it a professional and trustworthy look. MooBank offers a range of banking services, including checking and savings accounts, loans, and credit cards. The website is easy to navigate, and customers can quickly access the information they need to manage their finances effectively."
-                link="https://moo-bank.netlify.app/"
-                github="https://github.com/Amubasshir/moo-bank"
-                type="Landing page"
+                sub4="SASS"
+                summary="Cineverse is a modern, user-friendly website that provides information about movies, including details such as plot summaries, cast and crew information, ratings, and reviews. The website provides a seamless experience on any device. It features a clean, minimalist design with a predominantly dark color scheme, giving it a professional and trustworthy look. The website is easy to navigate, and users can quickly access the information they need to manage."
+                link="https://cine-verse.netlify.app/"
+                github="https://github.com/Amubasshir/Cineverse"
+                type="Feature Project"
               />
             </div>
             <div className="feature-project col-span-6 md:col-span-12 ">
