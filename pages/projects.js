@@ -144,7 +144,7 @@ const Project = ({ type, title, img, altImg, link, summary, github }) => {
             {summary}
           </p>
           <div className=" w-full dark:text-light  flex items-center justify-between ">
-            <Link href={github} target="_blank" className="w-12 md:w-10">
+            <Link href={github} target="_blank" className="w-12 md:w-10 xs:w-6">
               <GithubIcon />
             </Link>
 
