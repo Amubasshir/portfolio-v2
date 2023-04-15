@@ -425,7 +425,7 @@ const projects = () => {
                 sub2="Tailwind"
                 sub3="Firebase"
                 sub4="JWT"
-                summary="A repository application that provide easy add remove edit to any kind of repo with secure option.Enjoy the newest collection of most valuable NFTs.Please make sure that you are buying and selling most trending NFTs out there.Enjoy the newest collection of most valuable NFTs.Please make sure that you are buying and selling most trending NFTs out there."
+                summary="A repository application that provide easy add remove edit to any kind of repo with secure option.Pro repo is a powerful repo management app built using the MERN stack.With this modern app users can create, update, and delete their own repo. The app is highly secure, featuring JWT authentication and frontend route protection."
                 link="https://pro-repo.vercel.app/"
                 github="https://github.com/Amubasshir/pro-repo"
                 type="Feature Project"
