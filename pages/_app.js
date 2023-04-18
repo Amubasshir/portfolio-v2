@@ -50,6 +50,16 @@ function App({ Component, pageProps }) {
               rel="icon"
               href="https://i.ibb.co/prDbCz4/m-p-logo-black.png"
             />
+            {/* google tag */}
+            <script
+              async
+              src="https://www.googletagmanager.com/gtag/js?id=G-K09QDL8HKK"
+            ></script>
+            <script>
+              window.dataLayer = window.dataLayer || []; function gtag()
+              {dataLayer.push(arguments)}
+              gtag('js', new Date()); gtag('config', 'G-K09QDL8HKK');
+            </script>
           </Head>
           <main
             className={`${montserrat.variable} font-mont bg-light dark:bg-[#23272F] w-full min-h-screen`}
