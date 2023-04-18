@@ -1,9 +1,11 @@
+import { pageView } from 'componemt/lib/ga';
 import Footer from 'componemt/src/components/Footer';
 import Navbar from 'componemt/src/components/Navbar';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Montserrat } from 'next/font/google';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import Script from 'next/script';
 import { useEffect } from 'react';
 import '../styles/globals.css';
 
@@ -19,7 +21,7 @@ function App({ Component, pageProps }) {
 
   useEffect(() => {
     const handleRouteChange = (url) => {
-      pageview(url);
+      pageView(url);
     };
 
     //When the component is mounted, subscribe to router changes
