@@ -11,6 +11,8 @@ const montserrat = Montserrat({
   variable: '--font-mont',
 });
 
+const GTAG_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS;
+
 function App({ Component, pageProps }) {
   const router = useRouter();
   return (
@@ -51,15 +53,24 @@ function App({ Component, pageProps }) {
               href="https://i.ibb.co/prDbCz4/m-p-logo-black.png"
             />
             {/* google tag */}
-            <script
-              async
-              src="https://www.googletagmanager.com/gtag/js?id=G-K09QDL8HKK"
-            ></script>
-            <script>
-              window.dataLayer = window.dataLayer || []; function gtag()
-              {dataLayer.push(arguments)}
-              gtag('js', new Date()); gtag('config', 'G-K09QDL8HKK');
-            </script>
+            <Script
+              strategy="afterInteractive"
+              src={`https://www.googletagmanager.com/gtag/js?id=${GTAG_ID}`}
+            />
+            <Script
+              id="gtag-init"
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GTAG_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+              }}
+            />
           </Head>
           <main
             className={`${montserrat.variable} font-mont bg-light dark:bg-[#23272F] w-full min-h-screen`}
