@@ -365,7 +365,7 @@ const projects = () => {
   return (
     <>
       <Head>
-        <title>Mubasshir | Projects Page</title>
+        <title>Mubasshir | Projects</title>
         <meta
           name="description"
           content="It's about the Mubasshir Ahmed projects page"

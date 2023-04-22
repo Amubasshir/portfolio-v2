@@ -25,7 +25,7 @@ const contact = () => {
   return (
     <>
       <Head>
-        <title>Mubasshir | Contact Page</title>
+        <title>Mubasshir | Contact</title>
         <meta
           name="description"
           content="This is the contact page of Mubasshir Ahmed who is a React developer"

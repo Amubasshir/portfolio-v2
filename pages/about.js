@@ -11,7 +11,7 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>Mubasshir | About Page</title>
+        <title>Mubasshir | About</title>
         <meta
           name="description"
           content="It's about the Mubasshir Ahmed about page"

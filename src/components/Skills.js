@@ -19,7 +19,7 @@ const Skills = () => {
   return (
     <div className="skills mt-40 xs:mt-14" id="skills">
       <AnimatedText
-        text="Skills"
+        text="My Skills"
         className="!mb-16 lg:!text-7xl md:!text-6xl sm:!text-5xl xs:!text-3xl dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r from-pink-600 to-red-600 dark:duration-300"
       />
       <div className="skills-wrapper grid grid-cols-2 md:flex md:flex-col gap-6 w-full ">
