@@ -1,9 +1,8 @@
 import AnimatedText from 'componemt/src/components/AnimatedText';
 import Layout from 'componemt/src/components/Layout';
 import Head from 'next/head';
-import { useState } from 'react';
-
 import Image from 'next/image';
+import { useState } from 'react';
 import ContactImg from '../public/images/profile/email.svg';
 
 const contact = () => {
@@ -35,7 +34,7 @@ const contact = () => {
         <Layout className="pt-10 dark:bg-#23272F]">
           <AnimatedText
             text="Connect To Make A Difference"
-            className="mb-14 dark:!text-[#DB2649] xl:!text-7xl lg:!text-6xl md:!text-5xl sm:!text-4xl xs:!text-2xl md:!mb-8 xs:mb-0 "
+            className="mb-4 dark:!text-[#DB2649] xl:!text-7xl lg:!text-6xl md:!text-5xl sm:!text-4xl xs:!text-2xl md:!mb-2 xs:mb-0 "
           />
           <div id="contact" className="w-full h-auto xs:-mt-10">
             <div className=" m-auto px-2 py-16 w-full ">
