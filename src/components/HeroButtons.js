@@ -28,7 +28,7 @@ const HeroButtons = () => {
       className="hero-buttons flex items-center mt-4 self-start"
     >
       <Link
-        href="https://drive.google.com/file/d/1DrZZuahzIVNBDGye9MSheKWRIBxY0zj6/view?usp=share_link"
+        href="https://drive.google.com/file/d/1HDJlZLdXlZbIWp98jOPxtx6Mlvr7luC4/view?usp=share_link"
         target={'_blank'}
         className="flex items-center text-white px-6 py-2 bg-dark rounded-lg text-lg font-serif tracking-wider hover:bg-[#f0f1ea] hover:text-black border-solid border-transparent dark:border-double hover:border-dark border-2
         hover:dark:bg-dark hover:dark:text-white hover:dark:border-white
