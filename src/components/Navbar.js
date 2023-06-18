@@ -75,13 +75,13 @@ const Navbar = () => {
           src="https://i.ibb.co/gSpSyt4/m-p-logo-black.png"
           alt="logo"
           width="90"
-          className="black-logo xs:w-8"
+          className="black-logo xs:w-8 xl:w-14 2xl:w-16"
         />
         <img
           src="https://i.ibb.co/bHShrbd/m-p-logo-white.png"
           alt="logo"
           width="90"
-          className="hidden dark:block xs:w-8"
+          className="hidden dark:block xs:w-8 xl:w-14 2xl:w-16"
         />
       </Link>
 
@@ -91,22 +91,22 @@ const Navbar = () => {
             <CustomLink
               href="/"
               title="Home"
-              className="mr-4  text-lg nav-link"
+              className="sm:mr-2 mr-4 sm:text-base text-lg nav-link"
             />
             <CustomLink
               href="/projects"
               title="Projects"
-              className="mx-4 text-lg nav-link"
+              className="sm:mr-2 mx-4 sm:text-base text-lg nav-link"
             />
             <CustomLink
               href="/about"
               title="About"
-              className="mx-4 text-lg nav-link"
+              className="sm:mr-2 mx-4 sm:text-base text-lg nav-link"
             />
             <CustomLink
               href="/contact"
               title="Contact"
-              className="ml-4 text-lg nav-link"
+              className="sm:ml-2 ml-4 sm:text-base text-lg nav-link"
             />
           </div>
 

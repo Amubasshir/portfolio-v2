@@ -39,12 +39,12 @@ const FeatureProject = ({
         <Link
           href={link}
           target="_blank"
-          className="w-full cursor-pointer overflow-hidden rounded-lg lg:w-full  "
+          className="w-full h-full cursor-pointer overflow-hidden rounded-lg lg:w-full  "
         >
           <Image
             src={isHovering ? altImg : img}
             alt={title}
-            className="w-full h-auto rounded-2xl"
+            className="w-full h-[300px] rounded-2xl"
             priority
           />
         </Link>
@@ -71,7 +71,7 @@ const FeatureProject = ({
           </p>
         </div>
 
-        <p className="my-2 dark:text-light xs:text-base font-medium xs:font-light  text-black xs:mb-4">
+        <p className="my-2 font-serif dark:text-light xs:text-base font-medium xs:font-light  text-black xs:mb-4">
           {summary}
         </p>
         <div className="flex items-center gap-4 dark:text-light  ">
@@ -239,7 +239,7 @@ const Project = ({ type, title, img, altImg, link, summary, github }) => {
           <h2 className="my-2 dark:text-light  w-full text-left text-3xl font-bold lg:text-2xl  ">
             {title}
           </h2>
-          <p className="my-2 dark:text-light xs:text-base font-medium xs:font-light text-black xs:mb-4">
+          <p className="my-2 font-serif dark:text-light xs:text-base font-medium xs:font-light text-black xs:mb-4">
             {summary}
           </p>
           <div className=" w-full dark:text-light  flex items-center justify-between ">
@@ -375,13 +375,13 @@ const projects = () => {
         <Layout className="pt-10">
           <AnimatedText
             text="Where Imagination Meets Knowledge!"
-            className="mb-20 dark:!text-[#DB2649] xl:!text-7xl lg:!text-6xl md:!text-5xl sm:!text-4xl xs:!text-2xl md:!mb-8"
+            className="mb-20 dark:!text-[#DB2649]  xl:!text-6xl lg:!text-6xl md:!text-5xl sm:!text-4xl xs:!text-2xl md:!mb-8"
           />
 
           <div className="grid grid-col-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0 ">
             <div className="feature-project col-span-12 ">
               <FeatureProject
-                title="A Movie Info Website"
+                title="Cineverse"
                 img={projectm1}
                 altImg={projectm2}
                 sub1="React"
@@ -418,7 +418,7 @@ const projects = () => {
             </div>
             <div className="feature-project col-span-12 ">
               <FeatureProject
-                title="A Repository Application"
+                title="Repository Application"
                 img={project2}
                 altImg={project8}
                 sub1="MERN"
