@@ -14,7 +14,7 @@ export default function Home() {
         <title>Mubasshir</title>
         <meta name="description" content="Mubasshir Ahmed - React developer" />
       </Head>
-      <main className="flex  items-center dark:bg-[#23272F] text-black dark:text-light w-full min-h-screen">
+      <main className="xs:flex-col  flex flex-row  items-center dark:bg-[#23272F] text-black dark:text-light w-full min-h-screen">
         <Layout className="pt-4 md:pt-16 sm:pt-8 xs:pt-0 dark:bg-[#23272F] ">
           <div className="hero-section flex  items-center justify-between w-full lg:flex-col md:flex-col-reverse ">
             <div className="hero-text w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
