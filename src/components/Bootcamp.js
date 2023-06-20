@@ -22,7 +22,7 @@ const Details = ({ type, time, place, info, btns }) => {
         <span className="font-medium dark:text-[#9f9f9fd4] text-gray-800 text-xl xs:text-lg tracking-wider">
           {time} || {place}
         </span>
-        <p className="font-medium dark:text-light w-full mt-2 mb-4 text-gray-900 leading-7">
+        <p className="font-medium font-serif dark:text-light w-full mt-2 mb-4 text-gray-900 leading-7">
           {info}
         </p>
 

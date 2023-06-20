@@ -61,14 +61,15 @@ const contact = () => {
                       <p className="text-gray-700 dark:text-[#9f9f9fd4] tracking-wider">
                         React Developer
                       </p>
-                      <p className="py-4 md:py-2 text-base md:text-xs dark:text-light font-medium text-black/75 leading-5">
+                      <p className="py-4 md:py-2 text-base md:text-xs dark:text-light font-serif font-medium text-black/75 leading-5">
                         Are you looking for someone to collaborate on a project
                         or job with? If so, I am available and open to new
                         opportunities. Please feel free to reach out or just to
                         say hi! <br /> <br /> If you prefer not to use contact
                         forms, you can send me a direct email. I will do my best
                         to respond within 24 hours. Looking forward to hearing
-                        from you at <br />{' '}
+                        from you.
+                        <br />
                         <span className="text-lg md:text-base underline underline-offset-4  cursor-pointer dark:text-light dark:underline duration-300">
                           lastmubasshir@gmail.com
                         </span>

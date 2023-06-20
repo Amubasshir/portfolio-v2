@@ -87,7 +87,7 @@ const Navbar = () => {
 
       <div className="navbar-right flex xs:hidden">
         <nav className=" flex items-center">
-          <div>
+          <div className="font-serif">
             <CustomLink
               href="/"
               title="Home"

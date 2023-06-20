@@ -18,7 +18,7 @@ const singleWord = {
 const AnimatedParagraph = ({ text, className = '' }) => {
   return (
     <p
-      className={`my-4 text-lg font-medium leading-7 tracking-wider ${className}`}
+      className={`my-4 text-lg  font-medium leading-7 tracking-wider ${className}`}
     >
       {text.split(' ').map((word, index) => {
         return (

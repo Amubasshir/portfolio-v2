@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="w-full border-t-2 border-gray-500 dark:bg-[#23272F]  dark:text-light dark:border-gray-500 ">
       <div className="footer-wrapper py-8 xs:py-4 md:flex-col md:py-6 md:gap-4 flex items-center justify-between px-20">
         <div className="footer-left flex items-center justify-center">
-          <p className="text-base md:text-sm font-medium tracking-wide">
+          <p className="text-base font-serif md:text-sm font-medium tracking-wide">
             &copy;{new Date().getFullYear()} <span>Mubasshir Ahmed.</span>
             <span className="xs:hidden">All right reserved.</span>
           </p>

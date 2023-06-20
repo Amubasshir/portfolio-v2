@@ -29,7 +29,7 @@ const about = () => {
               <h2 className="mb-2 mt-1 text-lg md:text-base sm:text-sm font-bold text-gray-800 dark:text-[#9f9f9fd4] tracking-wider">
                 ABOUT ME
               </h2>
-              <p className="font-medium text-base text-gray-900 dark:text-light leading-6 sm:text-sm">
+              <p className="font-medium font-serif text-base text-gray-900 dark:text-light leading-6 sm:text-sm">
                 Hi, I'm Mubasshir, a React developer driven by a passion for
                 crafting elegant, functional, and user-centric digital
                 experiences. With a year of experience under my belt, I am
@@ -37,7 +37,7 @@ const about = () => {
                 visions to life. Let's work together to create something truly
                 beautiful and impactful.
               </p>
-              <p className="my-4 font-medium text-base text-gray-900 dark:text-light leading-6">
+              <p className="my-4 font-serif font-medium text-base text-gray-900 dark:text-light leading-6">
                 I strongly believe that development goes beyond just writing
                 code; it's about solving real-world problems by creating
                 intuitive and enjoyable experiences for users. As a developer,
@@ -48,7 +48,7 @@ const about = () => {
                 creativity with practicality, I aim to deliver products that
                 leave a lasting impact on the users and the business alike.
               </p>
-              <p className="font-medium text-base text-gray-900 dark:text-light leading-6 md:mb-6">
+              <p className="font-medium font-serif text-base text-gray-900 dark:text-light leading-6  md:mb-6">
                 Whether I am developing a website or any other digital product,
                 I bring a strong commitment to delivering excellent design and
                 user-centered thinking to every project I undertake. I am
@@ -56,11 +56,11 @@ const about = () => {
                 your next project and helping you achieve your goals.
               </p>
             </div>
-            <div className="about-image  row-span-full col-span-4 h-max border-2 border-solid border-gray-400 bg-transparent p-8 md:hidden ">
+            <div className="about-image  row-span-full col-span-4 pt-32 lg:pt-16 h-max border-2 border-solid border-gray-400 bg-transparent p-8 md:hidden ">
               <Image
                 src={aboutPic}
                 alt="mubasshir"
-                className="w-full h-full flex items-center"
+                className="w-full h-full flex items-center justify-center"
                 priority
               />
             </div>
