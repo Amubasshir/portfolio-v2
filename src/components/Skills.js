@@ -9,10 +9,8 @@ const data = [
   { id: 6, title: 'Tailwind' },
   { id: 7, title: 'SCSS' },
   { id: 8, title: 'Node.js' },
-  { id: 9, title: 'Express' },
-  { id: 10, title: 'MongoDB' },
-  { id: 11, title: 'Firebase' },
-  { id: 12, title: 'Framer Motion' },
+  { id: 9, title: 'MongoDB' },
+  { id: 10, title: 'Framer Motion' },
 ];
 
 const Skills = () => {
@@ -31,7 +29,8 @@ const Skills = () => {
                 <li key={skill.id} className="skill-item overflow-visible">
                   <div className="flex gap-10 items-baseline">
                     <span className="skill-number dark:text-white/50 text-6xl xl:text-6xl md:text-5xl sm:text-2xl w-20">
-                      {String(skill.id).padStart(2, 0).padEnd(3, '.')}
+                      {String(skill.id).padStart(2, 0)}
+                      <span className="dark:text-red-500">.</span>
                     </span>
                     <span className="skill-name text-4xl lg:text-4xl md:text-3xl sm:text-3xl xs:text-3xl xs:font-medium tracking-wider leading-6 ">
                       {skill.title}
@@ -49,8 +48,10 @@ const Skills = () => {
                 <li key={skill.id} className="skill-item overflow-hidden">
                   <div className="flex gap-10 items-baseline w-full">
                     <span className="skill-number dark:text-white/50 text-6xl xl:text-6xl md:text-5xl sm:text-2xl w-20">
-                      {String(skill.id).padStart(2, 0).padEnd(3, '.')}
+                      {String(skill.id).padStart(2, 0)}
+                      <span className="dark:text-red-500">.</span>
                     </span>
+
                     <span className="skill-name text-4xl lg:text-4xl md:text-3xl sm:text-3xl xs:text-3xl xs:font-medium tracking-wider leading-6  ">
                       {skill.title}
                     </span>
