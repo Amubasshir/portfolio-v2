@@ -6,10 +6,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import project4 from '../public/images/proects/mindwave.webp';
+import project6 from '../public/images/proects/mindwavee.webp';
 import projectm2 from '../public/images/proects/movie-p-1.png';
 import projectm1 from '../public/images/proects/movie-p-2.png';
-import project6 from '../public/images/proects/mubsic-2.png';
-import project4 from '../public/images/proects/mubsic.png';
 import project7 from '../public/images/proects/nft-land-collage.png';
 import project1 from '../public/images/proects/nft.png';
 import project8 from '../public/images/proects/pr.png';
@@ -396,13 +396,13 @@ const projects = () => {
             </div>
             <div className="feature-project col-span-6 md:col-span-12 ">
               <Project
-                title="A Music Application"
+                title="AI Automation Landing Page"
                 img={project4}
                 altImg={project6}
-                link="https://mubsic.netlify.app/"
-                github="https://github.com/Amubasshir/mubsic"
+                link="https://mindwave-new.vercel.app/"
+                github="https://github.com/Amubasshir/mindwave"
                 type="Landing Page"
-                summary="This is a landing page of Mubsic website that provide the details information about the application. The website provides a seamless experience on any device. It features a clean, minimalist design with a predominantly dark color scheme, giving it a professional and trustworthy look. The website is easy to navigate, and customers can quickly access the information they need to manage their finances effectively."
+                summary="Introducing Mindwave, a fully-featured AI landing page kit that has everything you need in a top-notch, professional-looking landing page. is fully optimized for user experience. It provides an intuitive interface, which allows for easy navigation and a seamless user journey. Additionally, Mindwave is fully responsive, meaning that it looks great on all devices, whether it's a desktop, laptop, tablet, or mobile device."
               />
             </div>
             <div className="feature-project col-span-6 md:col-span-12 ">
