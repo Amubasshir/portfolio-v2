@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { GithubIcon, LinkedInIcon, TwitterIcon } from './Icons';
+import { GithubIcon, LinkedInIcon, TwitterIcon, UpworkIcon } from './Icons';
 
 const Footer = () => {
   return (
@@ -14,15 +14,14 @@ const Footer = () => {
         <div className="footer-right">
           <div className="flex items-center justify-center">
             <motion.a
-              href="https://www.linkedin.com/in/mubasshirahmed7/"
+              href="https://www.upwork.com/freelancers/~0150a88664353f6900"
               target="_blank"
               whileTap={{ scale: 0.5 }}
               whileHover={{ y: -3 }}
               className="w-6 mx-2 md:w-4"
             >
-              <LinkedInIcon />
+              <UpworkIcon />
             </motion.a>
-
             <motion.a
               href="https://github.com/Amubasshir"
               target="_blank"
@@ -32,7 +31,15 @@ const Footer = () => {
             >
               <GithubIcon />
             </motion.a>
-
+            <motion.a
+              href="https://www.linkedin.com/in/mubasshirahmed7/"
+              target="_blank"
+              whileTap={{ scale: 0.5 }}
+              whileHover={{ y: -3 }}
+              className="w-6 mx-2 md:w-4"
+            >
+              <LinkedInIcon />
+            </motion.a>
             <motion.a
               href="https://twitter.com/lastmubasshir"
               target="_blank"
